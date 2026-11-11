@@ -3134,14 +3134,18 @@
 
     let activeCardTheme = 'sun';
 
-    // Default the QR URL to the live site URL (clean without hash)
+    // Default the QR URL to the live GitHub Pages URL (or current public domain)
+    const GITHUB_PAGES_URL = 'https://vietchuu.github.io/bao-tuong-lop-3-5/';
     const defaultSiteUrl = (() => {
       try {
         const u = new URL(window.location.href);
+        if (!u.hostname || u.hostname === 'localhost' || u.hostname === '127.0.0.1') {
+          return GITHUB_PAGES_URL;
+        }
         u.hash = '';
         return u.toString();
       } catch {
-        return 'https://baotuong-lop3-5.github.io/';
+        return GITHUB_PAGES_URL;
       }
     })();
     qrUrlInput.value = defaultSiteUrl;
