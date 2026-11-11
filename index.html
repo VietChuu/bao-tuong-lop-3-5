@@ -1401,9 +1401,8 @@
       padding: 0;
     }
     .memory-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      inset: 0;
       border-radius: 16px;
       transform-style: preserve-3d;
       transition: transform 380ms var(--ease-spring);
@@ -3027,8 +3026,10 @@
     let lockBoard = false;
     let matchedPairs = 0;
     let moveCount = 0;
+    let mismatchTimer;
 
     function initMemoryGame() {
+      clearTimeout(mismatchTimer);
       firstCard = null;
       secondCard = null;
       lockBoard = false;
@@ -3100,7 +3101,7 @@
         }
       } else {
         lockBoard = true;
-        setTimeout(() => {
+        mismatchTimer = setTimeout(() => {
           firstCard?.classList.remove('is-flipped');
           secondCard?.classList.remove('is-flipped');
           firstCard = null;
