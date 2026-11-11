@@ -1,0 +1,3573 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fffbeb">
+  <meta name="description" content="Nắng ấm sân trường — Báo tường điện tử chào mừng ngày Nhà giáo Việt Nam 20/11 của tập thể Lớp 3/5, Trường Tiểu học Chi Lăng.">
+  <title>Nắng ấm sân trường | Báo tường Lớp 3/5 · Tiểu học Chi Lăng</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%231d4ed8'/%3E%3Ccircle cx='37' cy='11' r='6' fill='%23fbbf24'/%3E%3Cpath d='M24 17v19m0-19c-4-3.6-9-4.6-15-3.6v19c6-1 11 0 15 3.6 4-3.6 9-4.6 15-3.6V13.4c-6-1-11 0-15 3.6Z' fill='%23fffbeb' stroke='%231e3a8a' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js" defer></script>
+  <style>
+    :root {
+      color-scheme: light;
+      /* Surface & Background Tokens (Warm Sunlit Schoolyard & Notebook Paper) */
+      --paper: #fffdf7;
+      --paper-warm: #fef9ea;
+      --sky-soft: #eff6ff;
+      --sky-tint: #dbeafe;
+      --meadow-soft: #f0fdf4;
+      --white: #ffffff;
+
+      /* Text & Ink Tokens (WCAG AA/AAA verified against light surfaces) */
+      --ink: #1e293b;
+      --ink-navy: #172554;
+      --muted: #475569;
+      --purple-ink: #4c1d95;
+
+      /* Semantic Brand & Playful Accent Tokens */
+      --blue: #1d4ed8;
+      --blue-deep: #1e3a8a;
+      --blue-shadow: #1e40af;
+      --coral: #e11d48;
+      --coral-deep: #be123c;
+      --coral-soft: #ffe4e6;
+      --sun: #fbbf24;
+      --sun-deep: #b45309;
+      --sun-soft: #fef3c7;
+      --leaf: #15803d;
+      --leaf-soft: #dcfce7;
+      --violet-soft: #ede9fe;
+
+      /* Borders, Radius & Soft Clay Shadows */
+      --line: #cbd5e1;
+      --line-warm: #fde68a;
+      --line-blue: #bfdbfe;
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 28px;
+      --card-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.08), 0 4px 10px -2px rgba(30, 58, 138, 0.05);
+      --clay-shadow: 0 4px 0 rgba(30, 58, 138, 0.12), 0 12px 24px -4px rgba(30, 58, 138, 0.08);
+
+      /* Typography Tokens */
+      --display: "Baloo 2", system-ui, -apple-system, sans-serif;
+      --body: "Nunito", system-ui, -apple-system, sans-serif;
+      --hand: "Patrick Hand", cursive, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5.25rem; }
+    body {
+      margin: 0;
+      background-color: var(--paper);
+      color: var(--ink);
+      font: 600 1.05rem/1.7 var(--body);
+      background-image:
+        radial-gradient(#3b82f618 1px, transparent 1px),
+        radial-gradient(#f59e0b18 1px, var(--paper) 1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, p, figure, blockquote { margin: 0; }
+    h1, h2, h3 {
+      font-family: var(--display);
+      color: var(--ink-navy);
+      font-weight: 800;
+      text-wrap: balance;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; cursor: pointer; background: none; border: none; }
+    a, button { touch-action: manipulation; }
+    img { display: block; max-width: 100%; }
+    svg { display: block; flex: none; }
+    [hidden] { display: none !important; }
+    :focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 3px;
+    }
+
+    .shell { width: min(100% - 36px, 80rem); margin-inline: auto; }
+    .icon {
+      width: 1.25em;
+      height: 1.25em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .svg-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      left: 1rem;
+      top: 1rem;
+      transform: translateY(-200%);
+    }
+    .skip-link:focus { transform: none; }
+
+    /* ==========================================================================
+       HEADER / MASTHEAD (Sticky, friendly school banner)
+       ========================================================================== */
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 253, 247, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid var(--line-warm);
+      box-shadow: 0 4px 16px rgba(29, 78, 216, 0.06);
+    }
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      min-height: 48px;
+      font: 800 1.35rem/1.15 var(--display);
+      color: var(--ink-navy);
+    }
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      border: 2px solid #93c5fd;
+      box-shadow: 0 3px 0 var(--blue-deep);
+    }
+    .brand-icon .icon { width: 24px; height: 24px; }
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-sub {
+      font: 700 0.76rem/1.2 var(--body);
+      color: var(--coral);
+      letter-spacing: 0.02em;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--paper-warm);
+      padding: 0.3rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--line-warm);
+    }
+    .site-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 44px;
+      padding: 0.4rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--ink-navy);
+      transition: background-color 180ms, color 180ms, transform 180ms var(--ease);
+    }
+    .site-nav a .icon {
+      width: 1.05em;
+      height: 1.05em;
+      color: var(--blue);
+    }
+    .site-nav a:hover {
+      background: var(--white);
+      color: var(--blue);
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.08);
+    }
+
+    /* Tactile Claymorphism Buttons */
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0.65rem 1.3rem;
+      border-radius: 999px;
+      font-size: 0.96rem;
+      font-weight: 800;
+      line-height: 1.3;
+      transition: background-color 180ms, color 180ms, transform 150ms var(--ease), box-shadow 150ms;
+    }
+    .button-primary {
+      background: var(--blue);
+      color: var(--white);
+      border: 2px solid var(--blue-deep);
+      box-shadow: 0 4px 0 var(--blue-deep), 0 8px 16px rgba(29, 78, 216, 0.22);
+    }
+    .button-primary:hover {
+      background: #1e40af;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 0 var(--blue-deep), 0 10px 20px rgba(29, 78, 216, 0.28);
+    }
+    .button-primary:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 var(--blue-deep);
+    }
+
+    .button-coral {
+      background: var(--coral);
+      color: var(--white);
+      border: 2px solid var(--coral-deep);
+      box-shadow: 0 4px 0 var(--coral-deep), 0 8px 16px rgba(225, 29, 72, 0.22);
+    }
+    .button-coral:hover {
+      background: var(--coral-deep);
+      transform: translateY(-1px);
+    }
+    .button-coral:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 var(--coral-deep);
+    }
+
+    .button-outline {
+      background: var(--white);
+      color: var(--ink-navy);
+      border: 2px solid #93c5fd;
+      box-shadow: 0 4px 0 #bfdbfe;
+    }
+    .button-outline:hover {
+      background: var(--sky-soft);
+      border-color: var(--blue);
+      color: var(--blue);
+      transform: translateY(-1px);
+    }
+    .button-outline:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 #bfdbfe;
+    }
+
+    .icon-button {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      padding: 0;
+      border: 2px solid var(--line-blue);
+      border-radius: 50%;
+      background: var(--white);
+      color: var(--ink-navy);
+      box-shadow: 0 3px 0 var(--line-blue);
+      transition: background-color 180ms, transform 150ms var(--ease);
+    }
+    .icon-button:hover {
+      background: var(--sky-soft);
+      color: var(--blue);
+    }
+    .icon-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 var(--line-blue);
+    }
+    .menu-toggle { display: none; }
+
+    /* ==========================================================================
+       HERO SECTION (Sunny Schoolyard & Classroom Pinboard)
+       ========================================================================== */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      overflow: clip;
+      background: linear-gradient(180deg, #e0f2fe 0%, #eff6ff 52%, var(--paper) 100%);
+      border-bottom: 2px dashed #bae6fd;
+    }
+    .hero-clouds {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.75;
+      background-image:
+        radial-gradient(circle at 12% 18%, #fef08a 0, #fef08a 55px, transparent 140px),
+        radial-gradient(circle at 86% 15%, #ffffff 0, #ffffff 70px, transparent 72px),
+        radial-gradient(circle at 91% 18%, #ffffff 0, #ffffff 50px, transparent 52px);
+    }
+    .hero-layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+      align-items: center;
+      gap: clamp(1.5rem, 3.5vw, 3rem);
+      padding-block: clamp(2.2rem, 4.8vw, 4.2rem) clamp(2.5rem, 5vw, 4.2rem);
+    }
+    .hero-copy { position: relative; z-index: 2; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--coral-deep);
+      font-size: 0.86rem;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .edition {
+      background: var(--sun-soft);
+      color: #92400e;
+      border: 2px solid #fcd34d;
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      box-shadow: 0 3px 0 #fde68a;
+    }
+    .edition .icon { color: #d97706; }
+
+    .hero h1 {
+      font-size: clamp(2.85rem, 5.6vw, 4.9rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      margin-block: 0.85rem 1rem;
+      color: var(--ink-navy);
+      text-shadow: 0 2px 0 var(--white);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--coral);
+      display: inline-block;
+      position: relative;
+    }
+    .hero h1 em::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.06em;
+      height: 0.22em;
+      background: #fde047;
+      z-index: -1;
+      border-radius: 999px;
+    }
+
+    .hero-lede {
+      max-width: 36rem;
+      color: var(--ink);
+      font-size: clamp(1.05rem, 1.3vw, 1.18rem);
+      line-height: 1.75;
+      font-weight: 600;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .school-badge-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-top: 1.65rem;
+      padding: 0.75rem 1.15rem;
+      background: var(--white);
+      border: 2px solid var(--line-blue);
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.07);
+    }
+    .school-badge-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--coral-soft);
+      color: var(--coral);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .school-badge-text {
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--ink-navy);
+    }
+    .school-badge-text strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--blue-deep);
+    }
+
+    /* Hero Classroom Pinboard Collage */
+    .collage-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .collage {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      aspect-ratio: 1.22;
+      min-width: 0;
+      background: #fef9c34d;
+      border: 3px dashed #93c5fd;
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+    }
+    .collage::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 8%;
+      border-radius: 24px;
+      background: radial-gradient(ellipse, #fef08a99, #dbeafe80 60%, transparent 80%);
+    }
+    .sketch {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .polaroid {
+      position: absolute;
+      display: block;
+      padding: 2.5% 2.5% 2%;
+      background: var(--white);
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.14), 0 4px 8px rgba(15, 23, 42, 0.08);
+      transform: rotate(var(--tilt));
+      transition: transform 280ms var(--ease-spring), box-shadow 280ms, border-color 200ms;
+    }
+    .polaroid .image-slot {
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+    .polaroid::before, .note::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      width: 34%;
+      height: 14px;
+      top: -7px;
+      left: 33%;
+      border-radius: 4px;
+      background: repeating-linear-gradient(115deg, #fde047 0 6px, #facc15 6px 12px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      transform: rotate(-3deg);
+      pointer-events: none;
+    }
+    .polaroid-main { width: 66%; left: 13%; top: 8%; z-index: 2; --tilt: -4.5deg; }
+    .polaroid-study { width: 35%; left: 2%; bottom: 4%; z-index: 3; --tilt: -7deg; }
+    .polaroid-art { width: 37%; right: 2%; bottom: 4%; z-index: 3; --tilt: 7.5deg; }
+    .polaroid-study::before { background: repeating-linear-gradient(115deg, #86efac 0 6px, #4ade80 6px 12px); }
+    .polaroid-art::before { background: repeating-linear-gradient(115deg, #fda4af 0 6px, #fb7185 6px 12px); }
+
+    .polaroid-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding-top: 0.4rem;
+      color: var(--ink-navy);
+      text-align: center;
+      font: 400 clamp(0.9rem, 1.55vw, 1.22rem)/1.35 var(--hand);
+    }
+    .date-stamp {
+      position: absolute;
+      z-index: 4;
+      width: clamp(4.2rem, 8.2vw, 7.2rem);
+      aspect-ratio: 1;
+      top: 4%;
+      right: 4%;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: var(--coral-deep);
+      transform: rotate(10deg);
+      pointer-events: none;
+      filter: drop-shadow(0 6px 10px rgba(225, 29, 72, 0.18));
+    }
+    .date-stamp svg { width: 100%; height: 100%; position: absolute; z-index: -1; inset: 0; }
+    .date-stamp strong { font: 800 clamp(1.05rem, 2.1vw, 1.7rem)/1.05 var(--display); color: var(--coral-deep); }
+    .date-stamp small { font-size: clamp(0.62rem, 0.9vw, 0.76rem); font-weight: 800; color: #92400e; }
+
+    .collage-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: 999px;
+      background: var(--white);
+      border: 1.5px solid var(--line-blue);
+      color: var(--blue-deep);
+      font-size: 0.86rem;
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.06);
+    }
+    .collage-hint .icon { color: var(--coral); }
+
+    @media (hover: hover) {
+      .polaroid:hover, .polaroid:focus-visible {
+        transform: rotate(0deg) translateY(-0.35rem) scale(1.04);
+        border-color: var(--blue);
+        z-index: 5;
+      }
+    }
+
+    /* ==========================================================================
+       HIGHLIGHTS RIBBON (4 Quick Counters for Kids, Teachers & Parents)
+       ========================================================================== */
+    .highlights-bar {
+      margin-top: -1.35rem;
+      position: relative;
+      z-index: 5;
+    }
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .highlight-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.9rem 1.05rem;
+      background: var(--white);
+      border: 2px solid var(--pill-border, var(--line-blue));
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 0 var(--pill-border, var(--line-blue)), var(--card-shadow);
+      transition: transform 180ms var(--ease);
+    }
+    .highlight-pill:hover { transform: translateY(-2px); }
+    .highlight-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--pill-bg, var(--sky-soft));
+      color: var(--pill-color, var(--blue));
+      flex-shrink: 0;
+    }
+    .highlight-icon .icon { width: 24px; height: 24px; }
+    .highlight-copy strong {
+      display: block;
+      font: 800 1.15rem/1.2 var(--display);
+      color: var(--ink-navy);
+    }
+    .highlight-copy span {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       SECTIONS & HEADINGS
+       ========================================================================== */
+    .section { padding-block: clamp(3.2rem, 5.5vw, 5.2rem); }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.2rem 2.5rem;
+      margin-bottom: clamp(1.6rem, 3.2vw, 2.4rem);
+    }
+    .section-head h2 {
+      font-size: clamp(2.1rem, 3.8vw, 3.35rem);
+      line-height: 1.12;
+      margin-top: 0.35rem;
+    }
+    .section-head h2 em {
+      font-style: normal;
+      color: var(--coral);
+    }
+    .section-intro {
+      max-width: 30rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       SECTION 1: GÓC TRI ÂN & THƠ VĂN + VỞ SẠCH CHỮ ĐẸP
+       ========================================================================== */
+    .tributes {
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border-bottom: 2px dashed var(--line-warm);
+    }
+    .tributes-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr 0.95fr;
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+    .paper-card {
+      position: relative;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: clamp(1.35rem, 2.5vw, 2rem);
+      border: 2px solid var(--card-border, #fde68a);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 5px 0 var(--card-border, #fde68a), var(--card-shadow);
+      background: var(--white);
+    }
+    .paper-card h3 {
+      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      line-height: 1.2;
+      color: var(--ink-navy);
+    }
+    .paper-card p {
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .paper-card .card-link { margin-top: auto; }
+
+    /* Notebook Grid Styling ("Giấy ô ly tiểu học") for the Poem Card */
+    .paper-card.poem {
+      --card-border: #c4b5fd;
+      background-color: #ffffff;
+      background-image:
+        linear-gradient(#c4b5fd45 1px, transparent 1px),
+        linear-gradient(90deg, #c4b5fd45 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .poem-text {
+      font: 400 clamp(1.22rem, 1.8vw, 1.45rem)/1.65 var(--hand);
+      color: var(--purple-ink);
+      background: rgba(255, 255, 255, 0.75);
+      padding: 0.65rem 1rem;
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 12px 12px 0;
+      width: 100%;
+    }
+    .grade-stamp {
+      position: absolute;
+      top: 1.1rem;
+      right: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: var(--coral-soft);
+      border: 1.5px dashed var(--coral);
+      color: var(--coral-deep);
+      font: 800 0.78rem/1.2 var(--display);
+      transform: rotate(6deg);
+    }
+
+    /* Story Highlight Card ("Bông hoa điểm 10") */
+    .paper-card.story {
+      --card-border: #bae6fd;
+      background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      background: var(--tag-bg, var(--sun-soft));
+      color: var(--tag-color, #92400e);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+    .poem .card-tag { --tag-bg: var(--violet-soft); --tag-color: var(--purple-ink); }
+    .story .card-tag { --tag-bg: var(--sky-tint); --tag-color: var(--blue-deep); }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      min-height: 44px;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      background: var(--sky-soft);
+      border: 1.5px solid var(--line-blue);
+      color: var(--blue-deep);
+      font-size: 0.9rem;
+      font-weight: 800;
+      transition: background-color 180ms, color 180ms, transform 150ms var(--ease);
+    }
+    .card-link:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+      transform: translateX(2px);
+    }
+
+    /* Vở Sạch Chữ Đẹp & Góc Học Tập Strip */
+    .activity-box {
+      margin-top: 2.2rem;
+      padding: clamp(1.25rem, 2.5vw, 1.85rem);
+      background: var(--white);
+      border: 2px solid #bbf7d0;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 5px 0 #bbf7d0, var(--card-shadow);
+    }
+    .activity-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1.15rem;
+    }
+    .activity-heading {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+      color: var(--ink-navy);
+    }
+    .activity-heading .icon { color: var(--leaf); }
+    .activity-sub {
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(0.8rem, 2vw, 1.2rem);
+    }
+    .activity-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      background: var(--paper);
+      padding: 0.6rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      transition: transform 200ms var(--ease), border-color 200ms, box-shadow 200ms;
+    }
+    .activity-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+      box-shadow: var(--card-shadow);
+    }
+    .activity-card .image-slot { border-radius: 10px; }
+    .activity-card .caption {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+      padding: 0.6rem 0.35rem 0.2rem;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--ink-navy);
+    }
+    .activity-card .caption-tag {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: var(--leaf-soft);
+      color: var(--leaf);
+      font-weight: 800;
+    }
+
+    /* ==========================================================================
+       IMAGE SLOTS & CROP SYSTEM
+       ========================================================================== */
+    .image-slot {
+      display: block;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background-color: #e0f2fe;
+      background-image: repeating-linear-gradient(135deg, #ffffff66 0 2px, transparent 2px 10px);
+      color: var(--blue);
+    }
+    .image-slot > .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.8rem;
+      height: 1.8rem;
+      opacity: 0.65;
+    }
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 240ms, scale 340ms var(--ease);
+    }
+    .image-slot img.is-loaded { opacity: 1; }
+    .image-slot:has(img.is-loaded) > .icon { visibility: hidden; }
+    .crop { aspect-ratio: var(--crop-ratio, 4 / 3); }
+    .crop img {
+      position: absolute;
+      width: var(--crop-width);
+      height: auto;
+      max-width: none;
+      inset: var(--crop-top) auto auto var(--crop-left);
+    }
+    @media (hover: hover) {
+      .gallery-card:hover img, .activity-card:hover img { scale: 1.045; }
+    }
+
+    /* ==========================================================================
+       SECTION 2: ALBUM 23 TRANG BÁO TƯỜNG
+       ========================================================================== */
+    .gallery-section {
+      background: var(--paper);
+    }
+    .gallery-toolbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.85rem 1rem;
+      margin-bottom: 1.5rem;
+      padding: 0.85rem 1rem;
+      background: var(--sky-soft);
+      border: 2px solid var(--line-blue);
+      border-radius: var(--radius-md);
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+    .filter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      min-height: 44px;
+      border: 2px solid #93c5fd;
+      border-radius: 999px;
+      background: var(--white);
+      padding: 0.5rem 1rem;
+      color: var(--ink-navy);
+      font-size: 0.88rem;
+      font-weight: 800;
+      line-height: 1.25;
+      box-shadow: 0 2px 0 #bfdbfe;
+      transition: color 180ms, background-color 180ms, transform 150ms, border-color 180ms;
+    }
+    .filter:hover {
+      background: var(--paper-warm);
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+    .filter[aria-pressed="true"] {
+      background: var(--blue);
+      color: var(--white);
+      border-color: var(--blue-deep);
+      box-shadow: 0 3px 0 var(--blue-deep);
+    }
+    .filter[aria-pressed="false"] .check-icon { display: none; }
+
+    .toolbar-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+    .gallery-count {
+      font-variant-numeric: tabular-nums;
+      color: var(--blue-deep);
+      background: var(--white);
+      padding: 0.38rem 0.85rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--line-blue);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+    .gallery-card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-width: 0;
+      border: 2px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 4px 0 #cbd5e1, var(--card-shadow);
+      transition: transform 220ms var(--ease), box-shadow 220ms, border-color 220ms;
+    }
+    .gallery-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+      box-shadow: 0 6px 0 var(--blue), var(--card-shadow);
+    }
+    .gallery-card .card-media {
+      position: relative;
+    }
+    .page-badge {
+      position: absolute;
+      top: 0.65rem;
+      left: 0.65rem;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.28rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(23, 37, 84, 0.88);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 800;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .cat-badge {
+      position: absolute;
+      top: 0.65rem;
+      right: 0.65rem;
+      z-index: 2;
+      padding: 0.26rem 0.68rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      background: var(--cat-bg, var(--sun-soft));
+      color: var(--cat-text, #92400e);
+      border: 1.5px solid var(--cat-border, #fcd34d);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+    .cat-badge[data-cat="intro"] { --cat-bg: #ffe4e6; --cat-text: #9f1239; --cat-border: #fda4af; }
+    .cat-badge[data-cat="stories"] { --cat-bg: #dbeafe; --cat-text: #1e3a8a; --cat-border: #93c5fd; }
+    .cat-badge[data-cat="art"] { --cat-bg: #dcfce7; --cat-text: #14532d; --cat-border: #86efac; }
+    .cat-badge[data-cat="wishes"] { --cat-bg: #fef3c7; --cat-text: #92400e; --cat-border: #fcd34d; }
+
+    .gallery-card .caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      gap: 0.55rem;
+      padding: 0.9rem 1.05rem 1rem;
+      color: var(--ink-navy);
+    }
+    .caption-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.65rem;
+    }
+    .caption-title {
+      font: 800 1.14rem/1.3 var(--display);
+      color: var(--ink-navy);
+    }
+    .caption-detail {
+      display: block;
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .caption-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    .gallery-card:hover .caption-cta { color: var(--coral); }
+
+    @media (min-width: 1024px) {
+      .gallery-card.is-featured {
+        grid-column: span 2;
+      }
+      .gallery-card.is-featured .caption-title {
+        font-size: 1.35rem;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION 3: GÓC LƯU BÚT & CÂY YÊU THƯƠNG + THẢ HOA ĐIỂM 10
+       ========================================================================== */
+    .guestbook {
+      position: relative;
+      overflow: hidden;
+      border-top: 2px dashed #86efac;
+      background-color: var(--meadow-soft);
+      background-image:
+        linear-gradient(#16a34a14 1px, transparent 1px),
+        linear-gradient(90deg, #16a34a14 1px, transparent 1px);
+      background-size: 26px 26px;
+    }
+    .notes {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(0.9rem, 2.2vw, 1.4rem);
+      padding-block: 0.5rem 1rem;
+    }
+    .note {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.35rem 1.25rem;
+      min-height: 14.5rem;
+      background: var(--note-bg, var(--white));
+      border: 2px solid var(--note-border, #fde047);
+      border-radius: 18px;
+      box-shadow: 0 6px 0 var(--note-border, #fde047), var(--card-shadow);
+      transform: rotate(var(--angle));
+      transition: transform 220ms var(--ease-spring);
+    }
+    @media (hover: hover) {
+      .note:hover { transform: rotate(0deg) translateY(-4px); z-index: 2; }
+    }
+    .note .note-icon {
+      color: var(--coral);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .note blockquote {
+      font: 400 clamp(1.14rem, 1.6vw, 1.32rem)/1.52 var(--hand);
+      color: var(--ink-navy);
+    }
+    .note .card-link {
+      margin-top: auto;
+      background: var(--white);
+    }
+    .note:nth-child(1) { --angle: -1.8deg; --note-bg: #fef9c3; --note-border: #facc15; }
+    .note:nth-child(2) { --angle: 1.5deg; --note-bg: #ffe4e6; --note-border: #fda4af; }
+    .note:nth-child(3) { --angle: -1.2deg; --note-bg: #e0f2fe; --note-border: #7dd3fc; }
+    .note:nth-child(4) { --angle: 1.8deg; --note-bg: #f3e8ff; --note-border: #c4b5fd; }
+
+    /* Interactive "Tặng Hoa Điểm 10" Celebration Box */
+    .cheer-banner {
+      margin-top: 2rem;
+      padding: clamp(1.25rem, 2.8vw, 1.85rem);
+      background: var(--white);
+      border: 2px solid #fda4af;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 5px 0 #fda4af, var(--card-shadow);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+    .cheer-copy {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 38rem;
+    }
+    .cheer-badge {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: var(--coral-soft);
+      border: 2px solid #fda4af;
+      color: var(--coral);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font: 800 1.35rem/1 var(--display);
+    }
+    .cheer-copy h3 {
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+      color: var(--ink-navy);
+    }
+    .cheer-copy p {
+      font-size: 0.94rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+    .cheer-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+    .cheer-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      background: var(--sun-soft);
+      border: 2px solid #fcd34d;
+      color: #92400e;
+      font: 800 1rem/1.2 var(--display);
+    }
+    .cheer-btn.is-popping {
+      animation: pop-bounce 360ms var(--ease-spring);
+    }
+    @keyframes pop-bounce {
+      0% { transform: scale(1); }
+      45% { transform: scale(1.12) rotate(-2deg); }
+      100% { transform: scale(1); }
+    }
+
+    /* ==========================================================================
+       SECTION 2.5: GÓC SÂN CHƠI GIỜ RA CHƠI (2 Trò Chơi Tương Tác)
+       ========================================================================== */
+    .playground-section {
+      background: linear-gradient(180deg, #fffbeb 0%, #eff6ff 100%);
+      border-top: 2px dashed #fcd34d;
+      border-bottom: 2px dashed #93c5fd;
+    }
+    .game-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .game-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      min-height: 52px;
+      padding: 0.65rem 1.35rem;
+      border-radius: 999px;
+      border: 2px solid #93c5fd;
+      background: var(--white);
+      color: var(--ink-navy);
+      font: 800 1.02rem/1.2 var(--display);
+      box-shadow: 0 4px 0 #bfdbfe;
+      transition: transform 160ms var(--ease), background-color 160ms, border-color 160ms;
+    }
+    .game-tab:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+    }
+    .game-tab[aria-selected="true"] {
+      background: var(--coral);
+      color: var(--white);
+      border-color: var(--coral-deep);
+      box-shadow: 0 4px 0 var(--coral-deep), 0 8px 18px rgba(225, 29, 72, 0.22);
+    }
+    .game-tab-badge {
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      background: rgba(255, 255, 255, 0.22);
+      color: inherit;
+    }
+    .game-tab[aria-selected="false"] .game-tab-badge {
+      background: var(--sun-soft);
+      color: #92400e;
+    }
+
+    .game-panel {
+      background: var(--white);
+      border: 2px solid #93c5fd;
+      border-radius: var(--radius-lg);
+      padding: clamp(1.25rem, 2.8vw, 2.2rem);
+      box-shadow: 0 6px 0 #bfdbfe, var(--card-shadow);
+    }
+
+    /* Game 1: Hái Hoa Điểm 10 */
+    .quiz-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.35rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px dashed #e2e8f0;
+    }
+    .flower-garden {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+    .flower-node {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 46px;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      border: 2px solid #cbd5e1;
+      background: #f8fafc;
+      color: var(--ink-navy);
+      font: 800 0.92rem/1 var(--display);
+      transition: transform 160ms var(--ease-spring), background-color 160ms, border-color 160ms;
+    }
+    .flower-node:hover { transform: translateY(-2px); }
+    .flower-node.is-active {
+      border-color: var(--blue);
+      background: var(--sky-soft);
+      color: var(--blue-deep);
+      box-shadow: 0 3px 0 #93c5fd;
+    }
+    .flower-node.is-bloomed {
+      border-color: #fda4af;
+      background: var(--coral-soft);
+      color: var(--coral-deep);
+      box-shadow: 0 3px 0 #fda4af;
+    }
+    .quiz-score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.5rem 1.05rem;
+      border-radius: 999px;
+      background: var(--sun-soft);
+      border: 2px solid #fcd34d;
+      color: #92400e;
+      font: 800 0.96rem/1.2 var(--display);
+    }
+    .quiz-stage {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1.4rem;
+      align-items: start;
+    }
+    .quiz-question-box {
+      padding: 1.35rem;
+      border-radius: var(--radius-md);
+      background: var(--paper-warm);
+      border: 2px solid var(--line-warm);
+    }
+    .quiz-q-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: var(--coral-soft);
+      color: var(--coral-deep);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin-bottom: 0.65rem;
+    }
+    .quiz-q-text {
+      font: 800 clamp(1.2rem, 2vw, 1.5rem)/1.35 var(--display);
+      color: var(--ink-navy);
+      margin-bottom: 1.1rem;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .quiz-opt {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      min-height: 54px;
+      padding: 0.7rem 1rem;
+      border-radius: 16px;
+      border: 2px solid #cbd5e1;
+      background: var(--white);
+      color: var(--ink-navy);
+      text-align: left;
+      font-weight: 800;
+      font-size: 0.98rem;
+      box-shadow: 0 3px 0 #cbd5e1;
+      transition: transform 140ms var(--ease), border-color 140ms, background-color 140ms;
+    }
+    .quiz-opt:hover:not(:disabled) {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+      background: var(--sky-soft);
+    }
+    .quiz-opt-letter {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: var(--sky-tint);
+      color: var(--blue-deep);
+      display: grid;
+      place-items: center;
+      font: 800 0.92rem/1 var(--display);
+      flex-shrink: 0;
+    }
+    .quiz-opt.is-correct {
+      border-color: #16a34a;
+      background: #dcfce7;
+      color: #14532d;
+      box-shadow: 0 3px 0 #86efac;
+    }
+    .quiz-opt.is-correct .quiz-opt-letter {
+      background: #16a34a;
+      color: var(--white);
+    }
+    .quiz-opt.is-wrong {
+      border-color: #e11d48;
+      background: #ffe4e6;
+      color: #881337;
+      box-shadow: 0 3px 0 #fda4af;
+    }
+    .quiz-opt.is-wrong .quiz-opt-letter {
+      background: #e11d48;
+      color: var(--white);
+    }
+    .quiz-feedback-card {
+      padding: 1.35rem;
+      border-radius: var(--radius-md);
+      border: 2px dashed #93c5fd;
+      background: var(--sky-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      min-height: 100%;
+    }
+    .quiz-feedback-title {
+      font: 800 1.2rem/1.3 var(--display);
+      color: var(--ink-navy);
+    }
+    .quiz-feedback-desc {
+      font-size: 0.96rem;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .quiz-reward-box {
+      margin-top: 1.25rem;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #fef3c7 0%, #ffe4e6 100%);
+      border: 2px solid #f59e0b;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    /* Game 2: Lật Thẻ Trí Nhớ (Memory Card Game) */
+    .memory-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .memory-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+    .memory-stat-pill {
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      background: var(--sky-soft);
+      border: 1.5px solid var(--line-blue);
+      color: var(--blue-deep);
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+    .memory-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .memory-card {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      border-radius: 16px;
+      perspective: 900px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .memory-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      transform-style: preserve-3d;
+      transition: transform 380ms var(--ease-spring);
+    }
+    .memory-card.is-flipped .memory-card-inner,
+    .memory-card.is-matched .memory-card-inner {
+      transform: rotateY(180deg);
+    }
+    .memory-face {
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .memory-front {
+      background: linear-gradient(135deg, #dbeafe 0%, #fef3c7 100%);
+      border: 2.5px solid #60a5fa;
+      box-shadow: 0 4px 0 #93c5fd;
+      color: var(--blue-deep);
+      gap: 0.3rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .memory-front:hover {
+      border-color: var(--coral);
+    }
+    .memory-front-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--white);
+      color: var(--coral);
+      display: grid;
+      place-items: center;
+      font: 800 1.15rem/1 var(--display);
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.12);
+    }
+    .memory-front-label {
+      font: 800 0.86rem/1.2 var(--display);
+      color: var(--ink-navy);
+    }
+    .memory-back {
+      transform: rotateY(180deg);
+      background: var(--white);
+      border: 2.5px solid var(--blue);
+      box-shadow: 0 4px 0 var(--blue);
+    }
+    .memory-card.is-matched .memory-back {
+      border-color: #16a34a;
+      box-shadow: 0 4px 0 #16a34a;
+    }
+    .memory-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .memory-back-caption {
+      position: absolute;
+      inset: auto 0 0 0;
+      background: rgba(23, 37, 84, 0.86);
+      color: var(--white);
+      padding: 0.28rem 0.5rem;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ==========================================================================
+       SECTION 3.5: XƯỞNG TẠO THIỆP CHÚC MỪNG 20/11 & MÃ QR
+       ========================================================================== */
+    .qrcard-section {
+      background: linear-gradient(180deg, var(--meadow-soft) 0%, #fffbeb 100%);
+      border-top: 2px dashed #86efac;
+    }
+    .qrcard-layout {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: clamp(1.25rem, 3vw, 2.2rem);
+      align-items: start;
+    }
+    .qrcard-form-box {
+      background: var(--white);
+      border: 2px solid #93c5fd;
+      border-radius: var(--radius-lg);
+      padding: clamp(1.25rem, 2.5vw, 1.85rem);
+      box-shadow: 0 5px 0 #bfdbfe, var(--card-shadow);
+      display: grid;
+      gap: 1rem;
+    }
+    .form-field {
+      display: grid;
+      gap: 0.38rem;
+    }
+    .form-field label {
+      font: 800 0.95rem/1.3 var(--display);
+      color: var(--ink-navy);
+    }
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 0.68rem 0.9rem;
+      border-radius: 14px;
+      border: 2px solid #cbd5e1;
+      background: #f8fafc;
+      color: var(--ink-navy);
+      font: 700 0.95rem/1.45 var(--body);
+      transition: border-color 150ms, background-color 150ms;
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--blue);
+      background: var(--white);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 86px;
+    }
+    .preset-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .preset-chip {
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1.5px solid #93c5fd;
+      background: var(--sky-soft);
+      color: var(--blue-deep);
+      font-size: 0.78rem;
+      font-weight: 800;
+      transition: background-color 140ms, color 140ms;
+    }
+    .preset-chip:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+    .theme-swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+    .theme-swatch {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      border: 2px solid #cbd5e1;
+      background: var(--white);
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--ink-navy);
+    }
+    .theme-swatch[aria-pressed="true"] {
+      border-color: var(--ink-navy);
+      box-shadow: 0 3px 0 var(--ink-navy);
+    }
+    .swatch-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(0, 0, 0, 0.2);
+    }
+
+    /* Live Greeting Card Preview */
+    .qrcard-preview-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .greeting-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: clamp(1.35rem, 2.8vw, 2rem);
+      background: var(--card-theme-bg, linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%));
+      border: 3px solid var(--card-theme-border, #f59e0b);
+      box-shadow: 0 8px 0 var(--card-theme-border, #f59e0b), var(--card-shadow);
+      overflow: hidden;
+    }
+    .greeting-card[data-theme="rose"] {
+      --card-theme-bg: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+      --card-theme-border: #fb7185;
+      --card-theme-accent: #be123c;
+    }
+    .greeting-card[data-theme="sky"] {
+      --card-theme-bg: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+      --card-theme-border: #38bdf8;
+      --card-theme-accent: #1d4ed8;
+    }
+    .greeting-card[data-theme="sun"] {
+      --card-theme-bg: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      --card-theme-border: #f59e0b;
+      --card-theme-accent: #b45309;
+    }
+    .greeting-card-inner {
+      background: rgba(255, 255, 255, 0.92);
+      border: 2px dashed var(--card-theme-border, #f59e0b);
+      border-radius: 20px;
+      padding: clamp(1.15rem, 2.2vw, 1.6rem);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.25rem;
+      align-items: center;
+      background-image:
+        linear-gradient(#93c5fd26 1px, transparent 1px),
+        linear-gradient(90deg, #93c5fd26 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .greeting-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.28rem 0.75rem;
+      border-radius: 999px;
+      background: var(--coral-soft);
+      color: var(--coral-deep);
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 0.55rem;
+    }
+    .greeting-to {
+      font: 800 clamp(1.2rem, 2vw, 1.5rem)/1.25 var(--display);
+      color: var(--ink-navy);
+      margin-bottom: 0.55rem;
+    }
+    .greeting-wish {
+      font: 400 clamp(1.15rem, 1.7vw, 1.35rem)/1.55 var(--hand);
+      color: var(--purple-ink);
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.65rem 0.9rem;
+      border-left: 4px solid var(--coral);
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 0.75rem;
+    }
+    .greeting-from {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--blue-deep);
+    }
+    .greeting-qr-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--white);
+      padding: 0.75rem;
+      border-radius: 16px;
+      border: 2px solid var(--line-blue);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+    .greeting-qr-box canvas {
+      width: 136px;
+      height: 136px;
+      display: block;
+      border-radius: 8px;
+    }
+    .greeting-qr-caption {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--ink-navy);
+      max-width: 136px;
+      line-height: 1.25;
+    }
+    .qrcard-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .copy-toast {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--leaf);
+      align-self: center;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background: var(--ink-navy);
+      color: var(--white);
+      border-top: 4px solid var(--sun);
+    }
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.6rem;
+      padding-block: clamp(2.2rem, 4.5vw, 3.4rem);
+    }
+    .footer .brand {
+      color: var(--white);
+      font-size: clamp(1.45rem, 2.8vw, 2rem);
+    }
+    .footer .brand-sub { color: var(--sun); }
+    .footer p {
+      color: #dbeafe;
+      font-size: 0.94rem;
+      margin-top: 0.45rem;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      padding-block: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .footer-bottom p { margin-top: 0; font-size: 0.86rem; color: #bfdbfe; }
+    .back-top {
+      background: var(--sun);
+      color: var(--ink-navy);
+      border: 2px solid #f59e0b;
+      box-shadow: 0 4px 0 #d97706;
+      white-space: nowrap;
+    }
+    .back-top:hover {
+      background: #fde047;
+      transform: translateY(-1px);
+    }
+    .footer :focus-visible { outline-color: var(--sun); }
+
+    /* ==========================================================================
+       LIGHTBOX READER (Storybook Viewer with Page Strip & Big Controls)
+       ========================================================================== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      margin: 0;
+      border: 0;
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      max-height: none;
+      padding: 0;
+      background: rgba(15, 23, 42, 0.94);
+      color: var(--white);
+    }
+    .lightbox::backdrop { background: rgba(15, 23, 42, 0.94); }
+    .lightbox[open] { display: grid; }
+    html:has(.lightbox[open]) { overflow: hidden; }
+    .lightbox-layout {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto auto;
+      width: min(100%, 102rem);
+      height: 100%;
+      margin: auto;
+      gap: 0.55rem;
+      padding:
+        max(0.75rem, env(safe-area-inset-top))
+        max(0.9rem, env(safe-area-inset-right))
+        max(0.75rem, env(safe-area-inset-bottom))
+        max(0.9rem, env(safe-area-inset-left));
+    }
+    .lightbox-top, .lightbox-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+    }
+    .lightbox-top {
+      background: rgba(30, 41, 59, 0.85);
+      padding: 0.5rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .lightbox-top .icon-button {
+      background: var(--coral);
+      color: var(--white);
+      border-color: #fda4af;
+      box-shadow: none;
+    }
+    .lightbox-top .icon-button:hover { background: var(--coral-deep); }
+    .lightbox :focus-visible { outline-color: var(--sun); }
+
+    .lightbox-stage {
+      display: grid;
+      place-items: center;
+      min-height: 0;
+      position: relative;
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+    .lightbox-stage img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      position: absolute;
+      inset: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 180ms;
+    }
+    .lightbox-stage img.is-loaded { opacity: 1; }
+    .lightbox-message {
+      padding: 0.85rem 1.2rem;
+      border-radius: 999px;
+      background: rgba(30, 41, 59, 0.9);
+      text-align: center;
+      font-weight: 700;
+    }
+    .lightbox-caption {
+      text-align: center;
+      min-width: 0;
+      line-height: 1.35;
+      padding-inline: 0.5rem;
+    }
+    .lightbox-title {
+      font: 800 clamp(1.05rem, 2vw, 1.45rem)/1.25 var(--display);
+      color: var(--sun);
+    }
+    .lightbox-description {
+      color: #e2e8f0;
+      margin-top: 0.2rem;
+      font-size: 0.88rem;
+    }
+    .lightbox-count {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: var(--sun);
+      color: var(--ink-navy);
+      font-variant-numeric: tabular-nums;
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .lightbox-original {
+      color: var(--white);
+      margin-left: auto;
+      border: 1.5px solid #93c5fd;
+      background: rgba(29, 78, 216, 0.35);
+      min-height: 44px;
+      padding: 0.4rem 0.95rem;
+    }
+    .lightbox-original:hover {
+      background: var(--sun);
+      color: var(--ink-navy);
+      border-color: var(--sun);
+    }
+    .nav-step-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      min-height: 48px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--ink-navy);
+      border: 2px solid #93c5fd;
+      font-weight: 800;
+      font-size: 0.92rem;
+      flex-shrink: 0;
+      transition: background-color 150ms, transform 150ms;
+    }
+    .nav-step-btn:hover:not(:disabled) {
+      background: var(--sun);
+      border-color: var(--sun);
+    }
+    .lightbox button:disabled { opacity: 0.45; cursor: default; }
+
+    /* Quick Page Number Strip inside Lightbox */
+    .lightbox-strip {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      overflow-x: auto;
+      padding: 0.35rem 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: #64748b transparent;
+    }
+    .strip-pill {
+      min-width: 40px;
+      height: 36px;
+      padding-inline: 0.55rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      font-size: 0.8rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1.5px solid transparent;
+      transition: background-color 150ms, color 150ms;
+    }
+    .strip-pill:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .strip-pill[aria-current="true"] {
+      background: var(--sun);
+      color: var(--ink-navy);
+      border-color: var(--white);
+    }
+
+    /* ==========================================================================
+       REVEAL ANIMATIONS & RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    [data-reveal].will-reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 420ms var(--ease), transform 420ms var(--ease);
+    }
+    [data-reveal].will-reveal.is-revealed, [data-reveal]:focus-within {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 1080px) {
+      .tributes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .paper-card.story { grid-column: span 2; }
+      .highlights-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .quiz-stage, .qrcard-layout { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media (max-width: 880px) {
+      .header-inner { min-height: 68px; flex-wrap: wrap; }
+      .menu-toggle { display: grid; }
+      .header-note { display: none; }
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        inset-inline: 0;
+        margin: 0.5rem 18px;
+        padding: 0.65rem;
+        background: var(--white);
+        border: 2px solid var(--line-blue);
+        border-radius: var(--radius-md);
+        box-shadow: var(--card-shadow);
+      }
+      .site-nav.is-open { display: grid; gap: 0.25rem; }
+      .site-nav a { justify-content: flex-start; padding-inline: 0.85rem; }
+      .notes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15rem; }
+      .memory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 680px) {
+      .hero-layout, .tributes-grid { grid-template-columns: minmax(0, 1fr); }
+      .paper-card.story { grid-column: auto; }
+      .hero-layout { gap: 1.6rem; padding-block: 1.8rem 2.4rem; }
+      .collage { width: min(100%, 30rem); margin-inline: auto; }
+      .section-head { flex-direction: column; align-items: flex-start; gap: 0.65rem; }
+      .activity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gallery-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+      .quiz-options { grid-template-columns: minmax(0, 1fr); }
+      .memory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .greeting-card-inner { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+      .greeting-wish { text-align: left; }
+      .footer-main { flex-direction: column; align-items: flex-start; }
+      .nav-step-label { display: none; }
+      .nav-step-btn { padding-inline: 0.85rem; }
+    }
+
+    @media (max-width: 440px) {
+      .shell { width: calc(100% - 28px); }
+      .highlights-grid { grid-template-columns: minmax(0, 1fr); }
+      .notes { grid-template-columns: minmax(0, 1fr); }
+      .note { transform: none; min-height: 0; }
+      .hero-actions .button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+      }
+      [data-reveal].will-reveal { opacity: 1; transform: none; }
+      .polaroid:hover, .polaroid:focus-visible { transform: rotate(var(--tilt)); }
+      .gallery-card:hover, .button:active, .icon-button:active { transform: none; }
+      .gallery-card:hover img, .activity-card:hover img { scale: none; }
+    }
+  </style>
+</head>
+<body id="dau-trang">
+  <!-- Embedded vector icon sprites so all icons render crisply offline & online -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4a5 5 0 0 1 5 5 5 5 0 0 1 5-5h4a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></symbol>
+    <symbol id="i-images" viewBox="0 0 24 24"><path d="M18 22H6a2 2 0 0 1-2-2V6"/><rect x="8" y="2" width="14" height="14" rx="2"/><circle cx="12.5" cy="6.5" r="1.5"/><path d="m22 12-3-3a2 2 0 0 0-2.83 0L10 16"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5m-7 7 7-7 7 7"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="M22 10v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10m0 0 10-7 10 7M2 10h2m16 0h2M9 21v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5"/><circle cx="12" cy="10" r="1"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-feather" viewBox="0 0 24 24"><path d="M20.24 12.24a6 6 0 0 0-8.48-8.48L3 12.5V21h8.5Z"/><path d="M16 8 2 22M9 15h8"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10m-5 0v-6m0 3C6.5 17 3 13.5 3 8c5.5 0 9 3.5 9 9Zm0-3c0-5.5 3.5-9 9-9 0 5.5-3.5 9-9 9Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6m-6-6h6m0 0-7 7M9 21H3v-6m0 6 7-7"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6m0-6-9 9m6 1v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.96-4.03-9-9-9Z"/></symbol>
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="6"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect width="6" height="6" x="3" y="3" rx="1"/><rect width="6" height="6" x="15" y="3" rx="1"/><rect width="6" height="6" x="3" y="15" rx="1"/><path d="M15 15h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  </svg>
+
+  <a class="skip-link button button-primary" href="#noi-dung">Đến nội dung chính</a>
+
+  <header class="masthead">
+    <div class="shell header-inner">
+      <a class="brand" href="#dau-trang">
+        <span class="brand-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+        <span class="brand-text">
+          <span>Nắng ấm sân trường</span>
+          <span class="brand-sub">Báo tường Lớp 3/5 · Tiểu học Chi Lăng</span>
+        </span>
+      </a>
+      <button class="menu-toggle icon-button" type="button" aria-label="Mở mục lục" aria-controls="muc-luc" aria-expanded="false">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+      <nav class="site-nav" id="muc-luc" aria-label="Mục lục báo tường">
+        <a href="#loi-ngo"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg> Trang bìa</a>
+        <a href="#tri-an"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg> Thơ &amp; Truyện</a>
+        <a href="#album"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 23 Trang báo</a>
+        <a href="#tro-choi"><svg class="icon" aria-hidden="true"><use href="#i-gamepad"/></svg> Trò chơi</a>
+        <a href="#thiep-qr"><svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg> Tạo thiệp QR</a>
+        <a href="#luu-but"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Lưu bút</a>
+      </nav>
+      <a class="header-note button button-coral" data-photo="1" href="./Asset/1.jpg">
+        <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Lật đọc từ Trang 1
+      </a>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <!-- HERO SECTION -->
+    <section class="hero" id="loi-ngo" aria-labelledby="bao-tuong-title">
+      <div class="hero-clouds" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow edition">
+            <svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>
+            Báo tường điện tử · Chào mừng 20 tháng 11
+          </p>
+          <h1 id="bao-tuong-title">Nắng ấm <em>sân trường</em></h1>
+          <p class="hero-lede">
+            Từ những nét chữ đầu tiên trên trang vở ô ly đến bao tiếng cười trong giờ ra chơi, thầy cô đã cùng chúng em viết nên tuổi thơ thật đẹp. Nhân ngày Nhà giáo Việt Nam 20/11, tập thể <strong>Lớp 3/5</strong> kính gửi thầy cô và ba mẹ món quà nhỏ đầy yêu thương này!
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" data-photo="1" href="./Asset/1.jpg">
+              <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Mở đọc từ Trang 1 (23 trang)
+            </a>
+            <a class="button button-coral" href="#tro-choi">
+              <svg class="icon" aria-hidden="true"><use href="#i-gamepad"/></svg> Chơi Hái Hoa &amp; Lật Thẻ
+            </a>
+            <a class="button button-outline" href="#thiep-qr">
+              <svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg> Tạo Thiệp QR 20/11
+            </a>
+          </div>
+          <div class="school-badge-card">
+            <span class="school-badge-icon" aria-hidden="true">
+              <svg class="icon"><use href="#i-school"/></svg>
+            </span>
+            <p class="school-badge-text">
+              <strong>Tập thể Lớp 3/5 · Trường Tiểu học Chi Lăng</strong>
+              Chủ đề: Chuyến đò yêu thương · Năm học 2026–2027
+            </p>
+          </div>
+        </div>
+
+        <div class="collage-wrapper">
+          <div class="collage" aria-label="Bảng tin ảnh nổi bật trên bìa báo tường">
+            <svg class="sketch" viewBox="0 0 600 490" fill="none" aria-hidden="true">
+              <path d="M18 250c-5-64 33-135 102-172m345 317c64-23 105-78 113-145M76 420c30 25 58 34 105 33" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 9" opacity=".55"/>
+              <g stroke="#f59e0b" stroke-width="3" stroke-linecap="round">
+                <path d="M132 49c7-13 23-13 32-3 10 12 3 26-8 31-11 4-25-3-26-13M147 29l-1-10m25 21 8-5m-3 28 10 2m-20 17 6 8m-48-12-8 7m5-24-11-2m19-17-6-8"/>
+                <path d="M512 245v20m-10-10h20M68 145v18m-9-9h18"/>
+              </g>
+              <g fill="#22c55e" opacity=".75">
+                <path d="M301 441c5-19 26-30 46-28-9 17-25 28-46 28Z"/>
+                <path d="M294 444c-4-18-18-29-37-31 4 19 20 31 37 31Z"/>
+                <path d="M289 456c20-14 39-14 54-6-16 13-37 15-54 6Z"/>
+              </g>
+            </svg>
+            <a class="polaroid polaroid-main" data-photo="1" href="./Asset/1.jpg">
+              <span class="image-slot crop" data-crop="521 375 748 700" data-eager data-alt="Cô giáo và học sinh cùng ôm bó hoa tươi thắm trên trang bìa"></span>
+              <span class="polaroid-label">Trang 1: Cô và trò Lớp 3/5</span>
+            </a>
+            <a class="polaroid polaroid-study" data-photo="18" href="./Asset/18.jpg">
+              <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Học sinh chăm chú luyện viết chữ đẹp"></span>
+              <span class="polaroid-label">Nét chữ đầu đời</span>
+            </a>
+            <a class="polaroid polaroid-art" data-photo="12" href="./Asset/12.jpg">
+              <span class="image-slot crop" data-crop="570 260 752 545" data-alt="Tranh tô màu cô giáo và học sinh chào mừng 20/11"></span>
+              <span class="polaroid-label">Tranh vẽ 20/11</span>
+            </a>
+            <div class="date-stamp">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path d="m50 2 9 7 11-1 6 9 11 3 3 11 8 8-3 11 3 11-8 8-3 11-11 3-6 9-11-1-9 7-9-7-11 1-6-9-11-3-3-11-8-8 3-11-3-11 8-8 3-11 11-3 6-9 11 1Z" fill="#fef08a" stroke="#f59e0b" stroke-width="2.5"/>
+                <circle cx="50" cy="50" r="36" stroke="#e11d48" stroke-width="1.8" stroke-dasharray="3 3" fill="none"/>
+              </svg>
+              <strong>20/11</strong>
+              <small>ĐIỂM 10</small>
+            </div>
+          </div>
+          <p class="collage-hint">
+            <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg>
+            Mẹo nhỏ: Bấm vào bất kỳ bức ảnh nào để phóng to đọc chữ thật rõ nhé!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS RIBBON -->
+    <div class="shell highlights-bar" aria-label="Tóm tắt nội dung tờ báo tường">
+      <div class="highlights-grid">
+        <a class="highlight-pill" href="#album" style="--pill-border:#93c5fd; --pill-bg:#dbeafe; --pill-color:#1d4ed8;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+          <span class="highlight-copy">
+            <strong>23 Trang báo</strong>
+            <span>Trọn vẹn kỷ niệm Lớp 3/5</span>
+          </span>
+        </a>
+        <a class="highlight-pill" href="#tri-an" style="--pill-border:#fda4af; --pill-bg:#ffe4e6; --pill-color:#e11d48;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg></span>
+          <span class="highlight-copy">
+            <strong>11 Thơ &amp; Truyện</strong>
+            <span>Lời văn trong sáng, ấm áp</span>
+          </span>
+        </a>
+        <a class="highlight-pill" href="#net-chu" style="--pill-border:#86efac; --pill-bg:#dcfce7; --pill-color:#15803d;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span>
+          <span class="highlight-copy">
+            <strong>05 Trang tranh &amp; Chữ</strong>
+            <span>Vở sạch chữ đẹp &amp; hội họa</span>
+          </span>
+        </a>
+        <a class="highlight-pill" href="#luu-but" style="--pill-border:#fcd34d; --pill-bg:#fef3c7; --pill-color:#b45309;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+          <span class="highlight-copy">
+            <strong>07 Lưu bút &amp; Ca dao</strong>
+            <span>Lời chúc gửi thầy cô kính yêu</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SECTION 1: GÓC TRI ÂN, THƠ VĂN & VỞ SẠCH CHỮ ĐẸP -->
+    <section class="section tributes" id="tri-an" aria-labelledby="tri-an-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Góc văn học tuổi thơ</p>
+            <h2 id="tri-an-title">Lời ngỏ, Thơ &amp; <em>Truyện kể</em></h2>
+          </div>
+          <p class="section-intro">
+            Những vần thơ bốn chữ, năm chữ và những câu chuyện nhỏ dưới mái trường được chúng em gom góp thành món quà gửi tặng thầy cô.
+          </p>
+        </header>
+
+        <div class="tributes-grid" data-reveal>
+          <!-- Card 1: Lời ngỏ -->
+          <article class="paper-card">
+            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Trang 02 · Lời ngỏ</span>
+            <h3>Chuyến đò yêu thương</h3>
+            <p>Tháng Mười Một lại về, mang theo những tia nắng dịu dàng và những cảm xúc thân thương hướng về ngày Nhà giáo Việt Nam 20/11.</p>
+            <p>Thầy cô không chỉ dạy chúng em đọc hay, viết đẹp, làm toán giỏi mà còn dạy chúng em biết yêu thương, sẻ chia và sống trung thực.</p>
+            <a class="card-link" data-photo="2" href="./Asset/2.jpg">
+              Đọc trọn trang Lời ngỏ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 2: Thơ trên giấy ô ly -->
+          <article class="paper-card poem">
+            <span class="grade-stamp"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> Điểm 10</span>
+            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg> Trang 03 · Thơ bốn chữ</span>
+            <h3>Bụi phấn yêu thương</h3>
+            <p class="poem-text">
+              Bụi phấn bay bay,<br>
+              Trên mái tóc thầy.<br>
+              Từng dòng chữ nhỏ,<br>
+              Chắp cánh em bay.
+            </p>
+            <a class="card-link" data-photo="3" href="./Asset/3.jpg">
+              Đọc cả 3 bài thơ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 3: Truyện ngắn nổi bật -->
+          <article class="paper-card story">
+            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Trang 04 · Truyện ngắn</span>
+            <h3>Bông hoa điểm 10</h3>
+            <p>Câu chuyện về bạn Nam từng lo lắng khi làm sai phép tính Toán, nhờ lời động viên dịu dàng của cô giáo: <em>“Chưa làm đúng hôm nay không có nghĩa là ngày mai con không làm được”</em> mà kiên trì đạt điểm 10.</p>
+            <a class="card-link" data-photo="4" href="./Asset/4.jpg">
+              Đọc câu chuyện của Nam <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+        </div>
+
+        <!-- Vở sạch chữ đẹp & Nét vẽ tri ân -->
+        <div class="activity-box" id="net-chu" data-reveal>
+          <div class="activity-header">
+            <h3 class="activity-heading">
+              <svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg>
+              Góc Vở sạch chữ đẹp &amp; Tranh vẽ của chúng em
+            </h3>
+            <span class="activity-sub">Bấm vào từng ảnh để xem trọn bài viết chữ đẹp và tranh vẽ 20/11</span>
+          </div>
+          <div class="activity-grid">
+            <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
+              <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Bạn nhỏ cúi bên vở tập viết"></span>
+              <span class="caption"><span>Nắn nót từng nét</span><span class="caption-tag">Trang 18</span></span>
+            </a>
+            <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
+              <span class="image-slot crop" data-crop="1438 673 337 277" data-alt="Bạn nhỏ ngồi viết bên bàn học"></span>
+              <span class="caption"><span>Những người bạn tốt</span><span class="caption-tag">Trang 19</span></span>
+            </a>
+            <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
+              <span class="image-slot crop" data-crop="1400 182 367 302" data-alt="Học sinh làm bài bên hộp bút màu"></span>
+              <span class="caption"><span>Chăm chút bài làm</span><span class="caption-tag">Trang 20</span></span>
+            </a>
+            <a class="activity-card" data-photo="12" href="./Asset/12.jpg">
+              <span class="image-slot crop" data-crop="570 260 752 545" data-alt="Tranh vẽ cô giáo và học sinh chào mừng 20/11"></span>
+              <span class="caption"><span>Nét vẽ tri ân</span><span class="caption-tag">Trang 12</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ALBUM TRỌN BỘ 23 TRANG BÁO TƯỜNG -->
+    <section class="section gallery-section" id="album" aria-labelledby="album-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> Trọn bộ 23 trang báo tường</p>
+            <h2 id="album-title">Khoảnh khắc dưới <em>mái trường</em></h2>
+          </div>
+          <p class="section-intro">
+            Thầy cô, ba mẹ và các bạn có thể chọn xem theo từng chuyên mục hoặc bấm vào từng trang báo để đọc chữ to, rõ ràng.
+          </p>
+        </header>
+
+        <div class="gallery-toolbar">
+          <div class="filters" role="group" aria-label="Lọc trang báo theo chuyên mục">
+            <button class="filter" type="button" aria-pressed="true" aria-controls="gallery" data-filter="all">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Tất cả (23 trang)
+            </button>
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="intro">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Bìa &amp; Lời ngỏ (2)
+            </button>
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="stories">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Thơ &amp; Truyện kể (9)
+            </button>
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="art">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Tranh vẽ &amp; Chữ đẹp (5)
+            </button>
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="wishes">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Lưu bút &amp; Danh ngôn (7)
+            </button>
+          </div>
+          <div class="toolbar-meta">
+            <p class="gallery-count" id="gallery-count" role="status"></p>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery"></div>
+        <noscript>
+          <p>Bật JavaScript để xem và lọc đầy đủ 23 trang báo tường. <a class="card-link" href="./Asset/1.jpg">Mở ảnh bìa</a></p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- SECTION 2.5: GÓC SÂN CHƠI GIỜ RA CHƠI (2 Trò Chơi Tương Tác) -->
+    <section class="section playground-section" id="tro-choi" aria-labelledby="tro-choi-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-gamepad"/></svg> Vừa học vừa chơi · Sân chơi Lớp 3/5</p>
+            <h2 id="tro-choi-title">Góc trò chơi <em>giờ ra chơi</em></h2>
+          </div>
+          <p class="section-intro">
+            Các bạn học sinh, thầy cô và ba mẹ hãy cùng thử sức với 2 trò chơi nhỏ vui nhộn để gom thật nhiều Bông hoa Điểm 10 tặng lớp mình nhé!
+          </p>
+        </header>
+
+        <div class="game-tabs" role="tablist" aria-label="Chọn trò chơi tương tác" data-reveal>
+          <button class="game-tab" id="tab-quiz" role="tab" type="button" aria-selected="true" aria-controls="panel-quiz">
+            <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            <span>1. Đố Vui Hái Hoa Điểm 10</span>
+            <span class="game-tab-badge">5 câu đố</span>
+          </button>
+          <button class="game-tab" id="tab-memory" role="tab" type="button" aria-selected="false" aria-controls="panel-memory">
+            <svg class="icon" aria-hidden="true"><use href="#i-images"/></svg>
+            <span>2. Lật Thẻ Tìm Tranh Lớp Mình</span>
+            <span class="game-tab-badge">6 cặp hình</span>
+          </button>
+        </div>
+
+        <!-- GAME 1 PANEL: HÁI HOA ĐIỂM 10 -->
+        <div class="game-panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" data-reveal>
+          <div class="quiz-topbar">
+            <div class="flower-garden" id="flower-garden" role="group" aria-label="Chọn bông hoa câu hỏi"></div>
+            <div class="quiz-score-pill" id="quiz-score-pill" aria-live="polite">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+              <span>Giỏ hoa của em: <strong id="quiz-score-num">0</strong>/5 bông Điểm 10</span>
+            </div>
+          </div>
+
+          <div class="quiz-stage">
+            <div class="quiz-question-box">
+              <span class="quiz-q-tag" id="quiz-q-tag">Bông hoa số 1</span>
+              <h3 class="quiz-q-text" id="quiz-q-text"></h3>
+              <div class="quiz-options" id="quiz-options"></div>
+            </div>
+
+            <div class="quiz-feedback-card" id="quiz-feedback" aria-live="polite">
+              <h4 class="quiz-feedback-title" id="quiz-feedback-title">🌸 Mời bạn chọn một bông hoa và bấm đáp án đúng!</h4>
+              <p class="quiz-feedback-desc" id="quiz-feedback-desc">
+                Mỗi câu trả lời đúng sẽ làm nở một Bông hoa Điểm 10 đỏ thắm và cộng thêm 1 bông hoa vào giỏ hoa chung của Lớp 3/5.
+              </p>
+              <div style="margin-top:auto; display:flex; flex-wrap:wrap; gap:0.6rem;">
+                <button class="button button-primary" id="quiz-next-btn" type="button">
+                  Sang bông hoa tiếp theo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </button>
+                <button class="button button-outline" id="quiz-reset-btn" type="button">
+                  <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg> Chơi lại
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-reward-box" id="quiz-reward-box" hidden>
+            <div>
+              <h3 style="font-size:1.35rem; color:var(--coral-deep);">🎉 Tuyệt vời! Em đã nở trọn vẹn 5/5 Bông hoa Điểm 10!</h3>
+              <p style="font-size:0.95rem; color:var(--ink);">Cô khen em đạt danh hiệu <strong>“Cháu Ngoan Lớp 3/5 — Dũng Sĩ Hoa Điểm 10”</strong> nhân dịp 20/11!</p>
+            </div>
+            <a class="button button-coral" href="#thiep-qr">
+              <svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg> Tạo Thiệp QR Tặng Cô Ngay
+            </a>
+          </div>
+        </div>
+
+        <!-- GAME 2 PANEL: LẬT THẺ TRÍ NHỚ -->
+        <div class="game-panel" id="panel-memory" role="tabpanel" aria-labelledby="tab-memory" hidden>
+          <div class="memory-toolbar">
+            <div class="memory-stats" aria-live="polite">
+              <span class="memory-stat-pill">Cặp hình đã ghép: <strong id="memory-pairs">0</strong>/6</span>
+              <span class="memory-stat-pill">Số lượt lật: <strong id="memory-moves">0</strong></span>
+            </div>
+            <button class="button button-outline" id="memory-restart" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg> Xáo thẻ chơi ván mới
+            </button>
+          </div>
+
+          <div class="memory-grid" id="memory-grid" aria-label="Bàn cờ lật thẻ tìm cặp trang báo"></div>
+
+          <div class="quiz-reward-box" id="memory-win-box" hidden>
+            <div>
+              <h3 style="font-size:1.35rem; color:#15803d;">🌟 Xuất sắc! Bạn đã tìm đủ 6 cặp trang báo của Lớp 3/5!</h3>
+              <p style="font-size:0.95rem; color:var(--ink);" id="memory-win-text">Bạn đã góp thêm 5 Bông hoa Điểm 10 vào giỏ hoa tri ân thầy cô!</p>
+            </div>
+            <button class="button button-primary" id="memory-play-again" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg> Chơi thêm ván nữa
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: GÓC LƯU BÚT & CÂY YÊU THƯƠNG -->
+    <section class="section guestbook" id="luu-but" aria-labelledby="luu-but-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-sprout"/></svg> Cây yêu thương Lớp 3/5</p>
+            <h2 id="luu-but-title">Cánh thư &amp; <em>Lưu bút nhỏ</em></h2>
+          </div>
+          <p class="section-intro">
+            Những dòng chữ viết tay nắn nót trên giấy ô ly được chúng em gửi gắm trong từng phong bì thư chúc mừng ngày 20/11.
+          </p>
+        </header>
+
+        <div class="notes" data-reveal>
+          <article class="note">
+            <svg class="icon note-icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            <blockquote>“Một người thầy giỏi giống như ngọn nến, cháy hết mình để thắp sáng đường đi cho những người khác.”</blockquote>
+            <a class="card-link" data-photo="14" href="./Asset/14.jpg">
+              Mở phong thư Trang 14 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="note">
+            <svg class="icon note-icon" aria-hidden="true"><use href="#i-sun"/></svg>
+            <blockquote>“Mỗi ngày đến trường là một ngày em khám phá thêm điều mới.”</blockquote>
+            <a class="card-link" data-photo="15" href="./Asset/15.jpg">
+              Mở phong thư Trang 15 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="note">
+            <svg class="icon note-icon" aria-hidden="true"><use href="#i-feather"/></svg>
+            <blockquote>“Thời gian dẫu bạc mái đầu<br>Tim trò vẫn tạc đậm câu ơn thầy.”</blockquote>
+            <a class="card-link" data-photo="16" href="./Asset/16.jpg">
+              Mở phong thư Trang 16 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="note">
+            <svg class="icon note-icon" aria-hidden="true"><use href="#i-sprout"/></svg>
+            <blockquote>“Chúng em kính chúc quý thầy cô luôn mạnh khỏe, hạnh phúc, tràn đầy nhiệt huyết!”</blockquote>
+            <a class="card-link" data-photo="17" href="./Asset/17.jpg">
+              Mở phong thư Trang 17 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+        </div>
+
+        <!-- Interactive Cheer / Flower Counter for Students, Parents & Teachers -->
+        <div class="cheer-banner" data-reveal>
+          <div class="cheer-copy">
+            <span class="cheer-badge" aria-hidden="true">10</span>
+            <div>
+              <h3>Gửi tặng Bông hoa Điểm 10 cho cô và trò Lớp 3/5!</h3>
+              <p>Thầy cô, ba mẹ và các bạn hãy bấm nút thả hoa để cổ vũ tờ báo tường của tập thể Lớp 3/5 nhé!</p>
+            </div>
+          </div>
+          <div class="cheer-actions">
+            <button class="button button-coral cheer-btn" id="cheer-button" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+              <span>Tặng Hoa Điểm 10</span>
+            </button>
+            <output class="cheer-counter" id="cheer-count" for="cheer-button" aria-live="polite">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+              <span id="cheer-number">120</span> bông hoa yêu thương
+            </output>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3.5: XƯỞNG TẠO THIỆP CHÚC MỪNG 20/11 KÈM MÃ QR -->
+    <section class="section qrcard-section" id="thiep-qr" aria-labelledby="thiep-qr-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg> Chia sẻ yêu thương · Quét QR đọc báo tường</p>
+            <h2 id="thiep-qr-title">Tạo thiệp 20/11 &amp; <em>Mã QR</em></h2>
+          </div>
+          <p class="section-intro">
+            Học sinh, phụ huynh và thầy cô có thể tự viết tấm thiệp 20/11 kèm mã QR dẫn thẳng tới trang báo tường Lớp 3/5 và tải ảnh thiệp về điện thoại để gửi qua Zalo hoặc in tặng!
+          </p>
+        </header>
+
+        <div class="qrcard-layout" data-reveal>
+          <!-- Form nhập thông tin thiệp -->
+          <div class="qrcard-form-box">
+            <div class="form-field">
+              <label for="qr-sender">1. Người gửi thiệp (Học sinh / Phụ huynh / Tập thể):</label>
+              <input class="form-input" id="qr-sender" type="text" maxlength="65" value="Tập thể Lớp 3/5 · Trường TH Chi Lăng" placeholder="VD: Em Minh Khôi - Lớp 3/5">
+            </div>
+
+            <div class="form-field">
+              <label for="qr-recipient">2. Kính gửi (Thầy cô nhận thiệp):</label>
+              <input class="form-input" id="qr-recipient" type="text" maxlength="65" value="Kính tặng Cô giáo chủ nhiệm & Quý Thầy Cô" placeholder="VD: Kính tặng Cô giáo chủ nhiệm Lớp 3/5">
+            </div>
+
+            <div class="form-field">
+              <label for="qr-wish">3. Lời chúc 20/11 (Chọn nhanh hoặc tự viết):</label>
+              <div class="preset-chips" role="group" aria-label="Chọn nhanh lời chúc mẫu">
+                <button class="preset-chip" type="button" data-wish="Nhân ngày 20/11, chúng em kính chúc thầy cô luôn mạnh khỏe, vui vẻ và mãi là nắng ấm dịu dàng trên sân trường của chúng em!">🌸 Lời chúc Học sinh</button>
+                <button class="preset-chip" type="button" data-wish="Gia đình xin gửi lời cảm ơn chân thành nhất tới cô giáo đã luôn kiên nhẫn, yêu thương và dìu dắt các con Lớp 3/5 mỗi ngày!">💐 Lời chúc Phụ huynh</button>
+                <button class="preset-chip" type="button" data-wish="Bụi phấn bay bay trên mái tóc thầy, từng dòng chữ nhỏ chắp cánh em bay. Kính chúc thầy cô ngày 20/11 tràn ngập niềm vui!">📖 Thơ Bụi phấn</button>
+                <button class="preset-chip" type="button" data-wish="Mời thầy cô, ba mẹ và các bạn quét mã QR bên cạnh để cùng lật đọc 23 trang báo tường Nắng Ấm Sân Trường của Lớp 3/5!">📱 Mời đọc báo tường</button>
+              </div>
+              <textarea class="form-textarea" id="qr-wish" maxlength="220">Nhân ngày 20/11, chúng em kính chúc thầy cô luôn mạnh khỏe, vui vẻ và mãi là nắng ấm dịu dàng trên sân trường của chúng em!</textarea>
+            </div>
+
+            <div class="form-field">
+              <label>4. Chọn màu giấy thiệp:</label>
+              <div class="theme-swatches" role="group" aria-label="Chọn màu thiệp">
+                <button class="theme-swatch" type="button" data-card-theme="sun" aria-pressed="true">
+                  <span class="swatch-dot" style="background:#fbbf24;"></span> Vàng Nắng Ấm
+                </button>
+                <button class="theme-swatch" type="button" data-card-theme="rose" aria-pressed="false">
+                  <span class="swatch-dot" style="background:#fb7185;"></span> Hồng Hoa Điểm 10
+                </button>
+                <button class="theme-swatch" type="button" data-card-theme="sky" aria-pressed="false">
+                  <span class="swatch-dot" style="background:#38bdf8;"></span> Xanh Bầu Trời
+                </button>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="qr-url">5. Đường dẫn trang web trong Mã QR:</label>
+              <input class="form-input" id="qr-url" type="url" placeholder="https://...">
+            </div>
+          </div>
+
+          <!-- Khung xem trước thiệp & Tải ảnh PNG -->
+          <div class="qrcard-preview-wrap">
+            <article class="greeting-card" id="greeting-card-preview" data-theme="sun" aria-label="Xem trước thiệp chúc mừng 20/11 có mã QR">
+              <div class="greeting-card-inner">
+                <div>
+                  <span class="greeting-badge">
+                    <svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>
+                    Thiệp Tri Ân 20/11 · Báo Tường Nắng Ấm Sân Trường
+                  </span>
+                  <h3 class="greeting-to" id="preview-recipient">Kính tặng Cô giáo chủ nhiệm &amp; Quý Thầy Cô</h3>
+                  <blockquote class="greeting-wish" id="preview-wish">
+                    “Nhân ngày 20/11, chúng em kính chúc thầy cô luôn mạnh khỏe, vui vẻ và mãi là nắng ấm dịu dàng trên sân trường của chúng em!”
+                  </blockquote>
+                  <p class="greeting-from">💌 Người gửi: <span id="preview-sender">Tập thể Lớp 3/5 · Trường TH Chi Lăng</span></p>
+                </div>
+
+                <div class="greeting-qr-box">
+                  <canvas id="qr-canvas" width="240" height="240" aria-label="Mã QR dẫn đến trang báo tường Lớp 3/5"></canvas>
+                  <span class="greeting-qr-caption">Quét QR đọc 23 trang báo Lớp 3/5</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="qrcard-actions">
+              <button class="button button-coral" id="download-card-btn" type="button">
+                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                <span>Tải Thiệp QR (Ảnh PNG) về máy</span>
+              </button>
+              <button class="button button-outline" id="copy-link-btn" type="button">
+                <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                <span>Sao chép Link Báo Tường</span>
+              </button>
+              <span class="copy-toast" id="copy-toast" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-main">
+      <div>
+        <a class="brand" href="#dau-trang">
+          <span class="brand-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+          <span class="brand-text">
+            <span>Nắng ấm sân trường</span>
+            <span class="brand-sub">Lớp 3/5 · Trường Tiểu học Chi Lăng</span>
+          </span>
+        </a>
+        <p>Thực hiện: Ban biên tập nhí Lớp 3/5 cùng cô giáo chủ nhiệm và quý phụ huynh.</p>
+        <p>Chào mừng Ngày Nhà giáo Việt Nam 20/11 · Năm học 2026–2027.</p>
+      </div>
+      <a class="button back-top" href="#dau-trang">
+        <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg> Lên đầu trang
+      </a>
+    </div>
+    <div class="shell footer-bottom">
+      <p>Kỷ niệm Ngày Nhà giáo Việt Nam 20/11 · Chuyến đò yêu thương</p>
+      <p>Thiết kế thân thiện cho Học sinh, Thầy cô &amp; Phụ huynh</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX DIALOG -->
+  <dialog class="lightbox" id="lightbox" aria-label="Đọc trang báo tường phóng to">
+    <div class="lightbox-layout">
+      <div class="lightbox-top">
+        <span class="lightbox-count" id="lightbox-count"></span>
+        <a class="button lightbox-original" id="lightbox-original" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh gốc kích thước lớn trong tab mới">
+          Xem ảnh gốc rõ nét <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+        </a>
+        <button class="icon-button" id="lightbox-close" type="button" aria-label="Đóng cửa sổ đọc báo" autofocus>
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <div class="lightbox-stage" id="lightbox-stage">
+        <p class="lightbox-message" id="lightbox-message" role="status"></p>
+      </div>
+      <div class="lightbox-controls">
+        <button class="nav-step-btn" id="lightbox-prev" type="button" aria-label="Trang trước">
+          <svg class="icon" aria-hidden="true"><use href="#i-left"/></svg>
+          <span class="nav-step-label">Trang trước</span>
+        </button>
+        <div class="lightbox-caption" aria-live="polite" aria-atomic="true">
+          <p class="lightbox-title" id="lightbox-title"></p>
+          <p class="lightbox-description" id="lightbox-description"></p>
+        </div>
+        <button class="nav-step-btn" id="lightbox-next" type="button" aria-label="Trang sau">
+          <span class="nav-step-label">Trang sau</span>
+          <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg>
+        </button>
+      </div>
+      <div class="lightbox-strip" id="lightbox-strip" role="navigation" aria-label="Chọn nhanh trang báo"></div>
+    </div>
+  </dialog>
+
+  <script>
+    const categoryLabels = {
+      intro: 'Bìa & Lời ngỏ',
+      stories: 'Thơ & Truyện kể',
+      art: 'Tranh & Chữ đẹp',
+      wishes: 'Lưu bút & Danh ngôn',
+    };
+
+    // Reading order of all 23 pages of Class 3/5's digital wall newspaper
+    const photos = [
+      { id: 1, category: 'intro', title: 'Bìa báo: Nắng ấm sân trường', description: 'Bìa báo tường 20/11 Lớp 3/5 với hình ảnh cô giáo và học sinh bên bó hoa tươi thắm.' },
+      { id: 2, category: 'intro', title: 'Lời ngỏ: Chuyến đò yêu thương', description: 'Lời tri ân tháng Mười Một của tập thể Lớp 3/5 gửi đến quý thầy cô giáo.' },
+      { id: 3, category: 'stories', title: 'Trang thơ tuổi thơ', description: 'Ba bài thơ trong sáng: Bụi phấn yêu thương, Mái trường mến yêu và Bạn cùng tiến.' },
+      { id: 4, category: 'stories', title: 'Truyện ngắn: Bông hoa điểm 10', description: 'Câu chuyện về bạn Nam kiên trì luyện tập Toán nhờ lời động viên dịu dàng của cô giáo.' },
+      { id: 5, category: 'stories', title: 'Lời xin lỗi trong ngăn bàn', description: 'Chuyện nhỏ giờ ra chơi về lòng dũng cảm nhận lỗi và tình bạn đẹp.' },
+      { id: 6, category: 'stories', title: 'Người gieo những hạt mầm', description: 'Bài tản văn xúc động kể về cô giáo và những điều tốt đẹp cô vun trồng mỗi ngày.' },
+      { id: 7, category: 'stories', title: 'Góc sân trường đầy nắng', description: 'Kỷ niệm thân thương về góc sân trường rợp bóng cây qua lời kể học trò.' },
+      { id: 8, category: 'stories', title: 'Món quà tháng Mười Một', description: 'Những dòng tản văn ấm áp gửi tặng thầy cô nhân ngày Nhà giáo Việt Nam 20/11.' },
+      { id: 9, category: 'stories', title: 'Ánh đèn cuối lớp', description: 'Hình ảnh cô Lan tận tụy ở lại sau giờ học để ân cần hướng dẫn học trò.' },
+      { id: 10, category: 'stories', title: 'Chiếc ghế dành cho bạn mới', description: 'Ngày đầu đến lớp của bạn Mai và sự chào đón ấm áp của cô cùng cả lớp.' },
+      { id: 11, category: 'stories', title: 'Bài học dưới gốc phượng', description: 'Một cơn giận dỗi vì quả bóng trở thành bài học quý giá về sự nhường nhịn.' },
+      { id: 12, category: 'art', title: 'Góc hội họa: Nét vẽ tri ân', description: 'Ba bức tranh màu tươi sáng của học sinh chúc mừng Ngày Nhà giáo Việt Nam 20/11.' },
+      { id: 13, category: 'art', title: 'Sắc màu ngày 20/11', description: 'Những bức tranh vẽ cô giáo và mái trường đầy ắp tình cảm của các họa sĩ nhí.' },
+      { id: 14, category: 'wishes', title: 'Lưu bút: Ngọn nến của thầy', description: 'Trang vở ô ly viết tay nắn nót ví người thầy như ngọn nến thắp sáng đường đi.' },
+      { id: 15, category: 'wishes', title: 'Lưu bút: Mỗi ngày đến trường', description: 'Cánh thư viết tay về niềm vui được khám phá bao điều mới lạ ở trường.' },
+      { id: 16, category: 'wishes', title: 'Lưu bút: Câu ơn thầy', description: 'Hai câu thơ tri ân thầy cô được trình bày sạch đẹp trên trang giấy ô ly.' },
+      { id: 17, category: 'wishes', title: 'Lưu bút: Lời nhắn bên nhành hoa', description: 'Lời chúc 20/11 viết tay nắn nót của học sinh gửi tặng quý thầy cô.' },
+      { id: 18, category: 'art', title: 'Vở sạch chữ đẹp: Cô giáo em yêu', description: 'Bài thi viết chữ đẹp của bạn Trần Phạm Gia Huy Lớp 3/5 và ảnh luyện chữ.' },
+      { id: 19, category: 'art', title: 'Vở sạch chữ đẹp: Những người bạn tốt', description: 'Bài viết chữ đẹp về tình bạn cùng hình ảnh các bạn nhỏ chăm chú bên bàn học.' },
+      { id: 20, category: 'art', title: 'Vở sạch chữ đẹp: Kỷ niệm trang vở', description: 'Từng nét chữ tròn trịa, thẳng hàng thể hiện lòng biết ơn cô giáo dạy dỗ.' },
+      { id: 21, category: 'wishes', title: 'Lời hay ý đẹp: Về nghề giáo', description: 'Tuyển tập những câu nói nổi tiếng tôn vinh nghề dạy học cao quý.' },
+      { id: 22, category: 'wishes', title: 'Lời hay ý đẹp: Tình thầy trò', description: 'Những câu ca dao, tục ngữ và vần thơ sâu sắc về nghĩa thầy trò.' },
+      { id: 23, category: 'wishes', title: 'Lời hay ý đẹp: Niềm vui việc học', description: 'Những lời khuyên bổ ích truyền cảm hứng học tập và rèn luyện mỗi ngày.' },
+    ];
+
+    const gallery = document.querySelector('#gallery');
+    const galleryCount = document.querySelector('#gallery-count');
+    const filters = [...document.querySelectorAll('[data-filter]')];
+    const dialog = document.querySelector('#lightbox');
+    const stage = document.querySelector('#lightbox-stage');
+    const message = document.querySelector('#lightbox-message');
+    const closeButton = document.querySelector('#lightbox-close');
+    const previousButton = document.querySelector('#lightbox-prev');
+    const nextButton = document.querySelector('#lightbox-next');
+    const originalLink = document.querySelector('#lightbox-original');
+    const lightboxTitle = document.querySelector('#lightbox-title');
+    const lightboxDescription = document.querySelector('#lightbox-description');
+    const lightboxCount = document.querySelector('#lightbox-count');
+    const lightboxStrip = document.querySelector('#lightbox-strip');
+    const photoPath = (id) => `./Asset/${id}.jpg`;
+    const padPage = (id) => String(id).padStart(2, '0');
+    const icon = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
+
+    let visiblePhotos = photos;
+    let lightboxPhotos = photos;
+    let currentIndex = 0;
+    let lightboxImage;
+    let opener;
+
+    function makeImage(photo, { alt = photo.description, eager = false, onLoad, onError } = {}) {
+      const image = document.createElement('img');
+      image.width = 1920;
+      image.height = 1080;
+      image.alt = alt;
+      image.loading = eager ? 'eager' : 'lazy';
+      image.decoding = 'async';
+      if (eager && photo.id === 1) image.fetchPriority = 'high';
+      image.addEventListener('load', () => {
+        image.classList.add('is-loaded');
+        onLoad?.();
+      }, { once: true });
+      image.addEventListener('error', () => {
+        image.hidden = true;
+        onError?.();
+      }, { once: true });
+      image.src = photoPath(photo.id);
+      return image;
+    }
+
+    document.querySelectorAll('[data-crop]').forEach((slot) => {
+      const [x, y, width, height] = slot.dataset.crop.split(' ').map(Number);
+      slot.style.setProperty('--crop-ratio', `${width} / ${height}`);
+      slot.style.setProperty('--crop-width', `${192000 / width}%`);
+      slot.style.setProperty('--crop-left', `${-100 * x / width}%`);
+      slot.style.setProperty('--crop-top', `${-100 * y / height}%`);
+      slot.innerHTML = icon('image');
+      const id = Number(slot.closest('[data-photo]').dataset.photo);
+      slot.append(makeImage(photos.find((photo) => photo.id === id), {
+        alt: slot.dataset.alt,
+        eager: slot.hasAttribute('data-eager'),
+      }));
+    });
+
+    function renderGallery(category) {
+      visiblePhotos = category === 'all' ? photos : photos.filter((photo) => photo.category === category);
+      filters.forEach((filter) => filter.setAttribute('aria-pressed', String(filter.dataset.filter === category)));
+
+      const cards = visiblePhotos.map((photo, index) => {
+        const card = document.createElement('a');
+        card.className = 'gallery-card';
+        const featured = category === 'all' && index === 0;
+        card.classList.toggle('is-featured', featured);
+        card.href = photoPath(photo.id);
+        card.dataset.photo = photo.id;
+        card.setAttribute('aria-label', `Trang ${padPage(photo.id)}: ${photo.title}`);
+
+        card.innerHTML = `
+          <span class="card-media">
+            <span class="page-badge">Trang ${padPage(photo.id)}</span>
+            <span class="cat-badge" data-cat="${photo.category}">${categoryLabels[photo.category]}</span>
+            <span class="image-slot">${icon('image')}</span>
+          </span>
+          <span class="caption">
+            <span>
+              <span class="caption-top">
+                <span class="caption-title"></span>
+              </span>
+              <span class="caption-detail"></span>
+            </span>
+            <span class="caption-cta">Bấm để đọc trang báo ${icon('expand')}</span>
+          </span>
+        `;
+
+        card.querySelector('.image-slot').append(makeImage(photo));
+        card.querySelector('.caption-title').textContent = photo.title;
+        card.querySelector('.caption-detail').textContent = photo.description;
+        return card;
+      });
+
+      gallery.replaceChildren(...cards);
+      const selectedLabel = category === 'all' ? 'Tất cả chuyên mục' : categoryLabels[category];
+      galleryCount.textContent = `Đang hiển thị ${visiblePhotos.length} trang · ${selectedLabel}`;
+    }
+
+    filters.forEach((filter) => filter.addEventListener('click', () => {
+      if (filter.getAttribute('aria-pressed') === 'false') renderGallery(filter.dataset.filter);
+    }));
+    renderGallery('all');
+
+    function renderStrip() {
+      const pills = lightboxPhotos.map((photo, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'strip-pill';
+        btn.textContent = `Tr.${padPage(photo.id)}`;
+        btn.setAttribute('aria-label', `Chuyển đến Trang ${photo.id}: ${photo.title}`);
+        btn.setAttribute('aria-current', String(idx === currentIndex));
+        btn.addEventListener('click', () => showPhoto(idx));
+        return btn;
+      });
+      lightboxStrip.replaceChildren(...pills);
+      const activePill = lightboxStrip.querySelector('[aria-current="true"]');
+      activePill?.scrollIntoView({ block: 'nearest', inline: 'center' });
+    }
+
+    function showPhoto(index) {
+      currentIndex = (index + lightboxPhotos.length) % lightboxPhotos.length;
+      const photo = lightboxPhotos[currentIndex];
+      lightboxTitle.textContent = `Trang ${padPage(photo.id)}: ${photo.title}`;
+      lightboxDescription.textContent = photo.description;
+      lightboxCount.textContent = `Trang ${padPage(photo.id)} (${currentIndex + 1}/${lightboxPhotos.length})`;
+      originalLink.href = photoPath(photo.id);
+      previousButton.disabled = nextButton.disabled = lightboxPhotos.length < 2;
+      message.hidden = false;
+      message.textContent = 'Đang mở trang báo…';
+      lightboxImage?.remove();
+      const image = makeImage(photo, {
+        eager: true,
+        onLoad: () => { if (lightboxImage === image) message.hidden = true; },
+        onError: () => { if (lightboxImage === image) message.textContent = 'Trang báo chưa mở được. Bạn hãy thử chuyển sang trang kế tiếp nhé.'; },
+      });
+      lightboxImage = image;
+      stage.append(image);
+      renderStrip();
+    }
+
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[data-photo]');
+      if (!link || event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      if (typeof dialog.showModal !== 'function') return;
+      lightboxPhotos = gallery.contains(link) ? visiblePhotos : photos;
+      const index = lightboxPhotos.findIndex((photo) => photo.id === Number(link.dataset.photo));
+      if (index === -1) return;
+      event.preventDefault();
+      opener = link;
+      showPhoto(index);
+      dialog.showModal();
+    });
+
+    closeButton.addEventListener('click', () => dialog.close());
+    previousButton.addEventListener('click', () => showPhoto(currentIndex - 1));
+    nextButton.addEventListener('click', () => showPhoto(currentIndex + 1));
+    dialog.addEventListener('keydown', (event) => {
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        showPhoto(currentIndex + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    dialog.addEventListener('close', () => opener?.focus({ preventScroll: true }));
+
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#muc-luc');
+    function setMenu(open) {
+      nav.classList.toggle('is-open', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Đóng mục lục' : 'Mở mục lục');
+      menuToggle.querySelector('use').setAttribute('href', open ? '#i-close' : '#i-menu');
+    }
+    menuToggle.addEventListener('click', () => setMenu(menuToggle.getAttribute('aria-expanded') === 'false'));
+    nav.addEventListener('click', (event) => { if (event.target.closest('a')) setMenu(false); });
+    document.querySelector('.masthead').addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        menuToggle.focus();
+      }
+    });
+    matchMedia('(max-width: 880px)').addEventListener('change', () => setMenu(false));
+
+    // Interactive "Tặng Hoa Điểm 10" Counter
+    const cheerBtn = document.querySelector('#cheer-button');
+    const cheerNumber = document.querySelector('#cheer-number');
+    const STORAGE_KEY = 'baotuong_3_5_flowers';
+    let flowerCount = 120;
+    try {
+      const saved = Number(localStorage.getItem(STORAGE_KEY));
+      if (saved >= 120) flowerCount = saved;
+    } catch {}
+    cheerNumber.textContent = flowerCount;
+
+    function addClassFlowers(amount = 1) {
+      flowerCount += amount;
+      cheerNumber.textContent = flowerCount;
+      cheerBtn.classList.remove('is-popping');
+      void cheerBtn.offsetWidth;
+      cheerBtn.classList.add('is-popping');
+      try { localStorage.setItem(STORAGE_KEY, String(flowerCount)); } catch {}
+    }
+
+    cheerBtn.addEventListener('click', () => addClassFlowers(1));
+
+    // =========================================================================
+    // SÂN CHƠI GIỜ RA CHƠI: TAB SWITCHER + GAME 1 (HÁI HOA) + GAME 2 (LẬT THẺ)
+    // =========================================================================
+    const tabQuiz = document.querySelector('#tab-quiz');
+    const tabMemory = document.querySelector('#tab-memory');
+    const panelQuiz = document.querySelector('#panel-quiz');
+    const panelMemory = document.querySelector('#panel-memory');
+
+    function switchGameTab(which) {
+      const isQuiz = which === 'quiz';
+      tabQuiz.setAttribute('aria-selected', String(isQuiz));
+      tabMemory.setAttribute('aria-selected', String(!isQuiz));
+      panelQuiz.hidden = !isQuiz;
+      panelMemory.hidden = isQuiz;
+    }
+    tabQuiz.addEventListener('click', () => switchGameTab('quiz'));
+    tabMemory.addEventListener('click', () => switchGameTab('memory'));
+
+    // --- GAME 1: ĐỐ VUI HÁI HOA ĐIỂM 10 ---
+    const quizQuestions = [
+      {
+        id: 1,
+        question: 'Điền từ còn thiếu vào câu tục ngữ quen thuộc: “Không thầy đố mày làm …”',
+        options: ['nên', 'hay', 'giỏi', 'xong'],
+        correct: 0,
+        explanation: 'Chính xác! Câu tục ngữ “Không thầy đố mày làm nên” nhắc chúng em luôn ghi nhớ công ơn dạy dỗ của thầy cô.',
+      },
+      {
+        id: 2,
+        question: 'Trong câu ca dao: “Muốn sang thì bắc cầu kiều / Muốn con hay chữ thì yêu lấy …”, từ còn thiếu là gì?',
+        options: ['trường', 'thầy', 'bạn', 'sách'],
+        correct: 1,
+        explanation: 'Đúng rồi! “Muốn con hay chữ thì yêu lấy thầy” thể hiện truyền thống tôn sư trọng đạo quý báu của dân tộc ta.',
+      },
+      {
+        id: 3,
+        question: 'Tờ báo tường chào mừng ngày 20/11 của tập thể Lớp 3/5 trường Tiểu học Chi Lăng có tên là gì?',
+        options: ['Nắng ấm sân trường', 'Mùa thu tới trường', 'Cánh diều tuổi thơ', 'Hoa nắng mùa xuân'],
+        correct: 0,
+        explanation: 'Hoan hô! Tờ báo tường của Lớp 3/5 chúng mình mang tên “Nắng ấm sân trường” với chủ đề “Chuyến đò yêu thương”.',
+      },
+      {
+        id: 4,
+        question: 'Trong truyện ngắn “Bông hoa điểm 10” (Trang 04), ai đã dịu dàng động viên bạn Nam kiên trì luyện Toán?',
+        options: ['Bạn lớp trưởng', 'Cô giáo', 'Bác bảo vệ', 'Chú chim nhỏ'],
+        correct: 1,
+        explanation: 'Tuyệt vời! Cô giáo đã dịu dàng nhắn nhủ bạn Nam: “Chưa làm đúng hôm nay không có nghĩa là ngày mai con không làm được.”',
+      },
+      {
+        id: 5,
+        question: 'Ngày Nhà giáo Việt Nam được tổ chức vào ngày nào hằng năm để tri ân các thầy cô giáo?',
+        options: ['05 tháng 9', '01 tháng 6', '20 tháng 11', '08 tháng 3'],
+        correct: 2,
+        explanation: 'Chính xác 100%! Ngày 20 tháng 11 hằng năm là Ngày Nhà giáo Việt Nam — ngày hội tri ân quý thầy cô kính yêu.',
+      },
+    ];
+
+    const flowerGarden = document.querySelector('#flower-garden');
+    const quizQTag = document.querySelector('#quiz-q-tag');
+    const quizQText = document.querySelector('#quiz-q-text');
+    const quizOptionsEl = document.querySelector('#quiz-options');
+    const quizFeedbackTitle = document.querySelector('#quiz-feedback-title');
+    const quizFeedbackDesc = document.querySelector('#quiz-feedback-desc');
+    const quizScoreNum = document.querySelector('#quiz-score-num');
+    const quizNextBtn = document.querySelector('#quiz-next-btn');
+    const quizResetBtn = document.querySelector('#quiz-reset-btn');
+    const quizRewardBox = document.querySelector('#quiz-reward-box');
+
+    let currentQIndex = 0;
+    const bloomedSet = new Set();
+
+    function renderQuiz() {
+      const q = quizQuestions[currentQIndex];
+      quizQTag.textContent = `Bông hoa số ${q.id} / ${quizQuestions.length}`;
+      quizQText.textContent = q.question;
+      quizScoreNum.textContent = String(bloomedSet.size);
+      quizRewardBox.hidden = bloomedSet.size < quizQuestions.length;
+
+      // Render 5 flower buds
+      const buds = quizQuestions.map((item, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        const bloomed = bloomedSet.has(item.id);
+        btn.className = `flower-node${idx === currentQIndex ? ' is-active' : ''}${bloomed ? ' is-bloomed' : ''}`;
+        btn.innerHTML = `${bloomed ? '🌺' : '🌼'} <span>Hoa số ${item.id}${bloomed ? ' · 10đ' : ''}</span>`;
+        btn.addEventListener('click', () => {
+          currentQIndex = idx;
+          renderQuiz();
+        });
+        return btn;
+      });
+      flowerGarden.replaceChildren(...buds);
+
+      // Render 4 answer options
+      const letters = ['A', 'B', 'C', 'D'];
+      const alreadyBloomed = bloomedSet.has(q.id);
+      const optButtons = q.options.map((optText, optIdx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'quiz-opt';
+        if (alreadyBloomed && optIdx === q.correct) btn.classList.add('is-correct');
+        btn.innerHTML = `<span class="quiz-opt-letter">${letters[optIdx]}</span><span>${optText}</span>`;
+        btn.addEventListener('click', () => handleAnswer(optIdx, btn));
+        return btn;
+      });
+      quizOptionsEl.replaceChildren(...optButtons);
+
+      if (alreadyBloomed) {
+        quizFeedbackTitle.textContent = `🌺 Bông hoa số ${q.id} đã nở Điểm 10!`;
+        quizFeedbackDesc.textContent = q.explanation;
+      } else {
+        quizFeedbackTitle.textContent = `🌸 Thử thách Bông hoa số ${q.id}`;
+        quizFeedbackDesc.textContent = 'Hãy bấm vào một đáp án A, B, C hoặc D bên trái để làm nở Bông hoa Điểm 10 này nhé!';
+      }
+    }
+
+    function handleAnswer(selectedIdx, clickedBtn) {
+      const q = quizQuestions[currentQIndex];
+      const allBtns = [...quizOptionsEl.querySelectorAll('.quiz-opt')];
+      if (selectedIdx === q.correct) {
+        clickedBtn.classList.add('is-correct');
+        if (!bloomedSet.has(q.id)) {
+          bloomedSet.add(q.id);
+          addClassFlowers(1);
+        }
+        quizFeedbackTitle.textContent = '🎉 Giỏi quá! Em nhận được 1 Bông hoa Điểm 10!';
+        quizFeedbackDesc.textContent = q.explanation;
+        quizScoreNum.textContent = String(bloomedSet.size);
+        quizRewardBox.hidden = bloomedSet.size < quizQuestions.length;
+        // Update flower garden state
+        const activeBud = flowerGarden.children[currentQIndex];
+        if (activeBud) {
+          activeBud.classList.add('is-bloomed');
+          activeBud.innerHTML = `🌺 <span>Hoa số ${q.id} · 10đ</span>`;
+        }
+      } else {
+        clickedBtn.classList.add('is-wrong');
+        quizFeedbackTitle.textContent = '💡 Gần đúng rồi, thử chọn lại nhé!';
+        quizFeedbackDesc.textContent = 'Đáp án này chưa chính xác. Em hãy đọc kỹ lại câu hỏi và chọn một đáp án khác nhé!';
+      }
+    }
+
+    quizNextBtn.addEventListener('click', () => {
+      currentQIndex = (currentQIndex + 1) % quizQuestions.length;
+      renderQuiz();
+    });
+    quizResetBtn.addEventListener('click', () => {
+      bloomedSet.clear();
+      currentQIndex = 0;
+      renderQuiz();
+    });
+    renderQuiz();
+
+    // --- GAME 2: LẬT THẺ TRÍ NHỚ (MEMORY CARD GAME) ---
+    const memoryItems = [
+      { pageId: 1, label: 'Trang 01 · Bìa báo' },
+      { pageId: 3, label: 'Trang 03 · Thơ Bụi phấn' },
+      { pageId: 12, label: 'Trang 12 · Tranh 20/11' },
+      { pageId: 14, label: 'Trang 14 · Lưu bút' },
+      { pageId: 18, label: 'Trang 18 · Chữ đẹp' },
+      { pageId: 21, label: 'Trang 21 · Lời hay' },
+    ];
+
+    const memoryGrid = document.querySelector('#memory-grid');
+    const memoryPairsEl = document.querySelector('#memory-pairs');
+    const memoryMovesEl = document.querySelector('#memory-moves');
+    const memoryRestartBtn = document.querySelector('#memory-restart');
+    const memoryPlayAgainBtn = document.querySelector('#memory-play-again');
+    const memoryWinBox = document.querySelector('#memory-win-box');
+    const memoryWinText = document.querySelector('#memory-win-text');
+
+    let firstCard = null;
+    let secondCard = null;
+    let lockBoard = false;
+    let matchedPairs = 0;
+    let moveCount = 0;
+
+    function initMemoryGame() {
+      firstCard = null;
+      secondCard = null;
+      lockBoard = false;
+      matchedPairs = 0;
+      moveCount = 0;
+      memoryPairsEl.textContent = '0';
+      memoryMovesEl.textContent = '0';
+      memoryWinBox.hidden = true;
+
+      // Duplicate 6 items into 12 cards and shuffle (Fisher-Yates)
+      const deck = [...memoryItems, ...memoryItems].map((item, idx) => ({ ...item, uid: idx }));
+      for (let i = deck.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+
+      const cardElements = deck.map((cardData, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'memory-card';
+        btn.dataset.pageId = String(cardData.pageId);
+        btn.setAttribute('aria-label', `Thẻ úp số ${idx + 1}`);
+        btn.innerHTML = `
+          <span class="memory-card-inner">
+            <span class="memory-face memory-front">
+              <span class="memory-front-badge">10</span>
+              <span class="memory-front-label">Lớp 3/5 · Mở thẻ</span>
+            </span>
+            <span class="memory-face memory-back">
+              <img src="./Asset/${cardData.pageId}.jpg" alt="${cardData.label}" loading="lazy">
+              <span class="memory-back-caption">${cardData.label}</span>
+            </span>
+          </span>
+        `;
+        btn.addEventListener('click', () => flipMemoryCard(btn, cardData));
+        return btn;
+      });
+      memoryGrid.replaceChildren(...cardElements);
+    }
+
+    function flipMemoryCard(cardEl, cardData) {
+      if (lockBoard) return;
+      if (cardEl === firstCard || cardEl.classList.contains('is-matched')) return;
+
+      cardEl.classList.add('is-flipped');
+
+      if (!firstCard) {
+        firstCard = cardEl;
+        return;
+      }
+
+      secondCard = cardEl;
+      moveCount += 1;
+      memoryMovesEl.textContent = String(moveCount);
+
+      const isMatch = firstCard.dataset.pageId === secondCard.dataset.pageId;
+      if (isMatch) {
+        firstCard.classList.add('is-matched');
+        secondCard.classList.add('is-matched');
+        matchedPairs += 1;
+        memoryPairsEl.textContent = String(matchedPairs);
+        firstCard = null;
+        secondCard = null;
+
+        if (matchedPairs === memoryItems.length) {
+          addClassFlowers(5);
+          memoryWinText.textContent = `Hoàn thành chỉ sau ${moveCount} lượt lật! Bạn vừa góp thêm 5 Bông hoa Điểm 10 vào giỏ hoa của Lớp 3/5!`;
+          memoryWinBox.hidden = false;
+        }
+      } else {
+        lockBoard = true;
+        setTimeout(() => {
+          firstCard?.classList.remove('is-flipped');
+          secondCard?.classList.remove('is-flipped');
+          firstCard = null;
+          secondCard = null;
+          lockBoard = false;
+        }, 780);
+      }
+    }
+
+    memoryRestartBtn.addEventListener('click', initMemoryGame);
+    memoryPlayAgainBtn.addEventListener('click', initMemoryGame);
+    initMemoryGame();
+
+    // =========================================================================
+    // XƯỞNG TẠO THIỆP CHÚC MỪNG 20/11 KÈM MÃ QR & TẢI ẢNH PNG
+    // =========================================================================
+    const qrSenderInput = document.querySelector('#qr-sender');
+    const qrRecipientInput = document.querySelector('#qr-recipient');
+    const qrWishInput = document.querySelector('#qr-wish');
+    const qrUrlInput = document.querySelector('#qr-url');
+    const previewSender = document.querySelector('#preview-sender');
+    const previewRecipient = document.querySelector('#preview-recipient');
+    const previewWish = document.querySelector('#preview-wish');
+    const cardPreviewEl = document.querySelector('#greeting-card-preview');
+    const qrCanvas = document.querySelector('#qr-canvas');
+    const downloadCardBtn = document.querySelector('#download-card-btn');
+    const copyLinkBtn = document.querySelector('#copy-link-btn');
+    const copyToast = document.querySelector('#copy-toast');
+    const presetChips = [...document.querySelectorAll('.preset-chip')];
+    const themeSwatches = [...document.querySelectorAll('.theme-swatch')];
+
+    let activeCardTheme = 'sun';
+
+    // Default the QR URL to the live site URL (clean without hash)
+    const defaultSiteUrl = (() => {
+      try {
+        const u = new URL(window.location.href);
+        u.hash = '';
+        return u.toString();
+      } catch {
+        return 'https://baotuong-lop3-5.github.io/';
+      }
+    })();
+    qrUrlInput.value = defaultSiteUrl;
+
+    // Built-in pure-JS QR Matrix Generator (ISO/IEC 18004 Byte Mode, ECC Level L, Versions 1-6)
+    // Used as an automatic zero-dependency fallback if qrcode-generator CDN hasn't loaded yet
+    function generateFallbackQrMatrix(text) {
+      const bytes = [...new TextEncoder().encode(text)];
+      const V_SPEC = [
+        null,
+        { size: 21, total: 26, ec: 7, blocks: 1, align: [] },
+        { size: 25, total: 44, ec: 10, blocks: 1, align: [6, 18] },
+        { size: 29, total: 70, ec: 15, blocks: 1, align: [6, 22] },
+        { size: 33, total: 100, ec: 20, blocks: 1, align: [6, 26] },
+        { size: 37, total: 134, ec: 26, blocks: 1, align: [6, 30] },
+        { size: 41, total: 172, ec: 18, blocks: 2, align: [6, 34] },
+      ];
+      let ver = 1;
+      while (ver < 6 && bytes.length + 2 > V_SPEC[ver].total - V_SPEC[ver].ec * V_SPEC[ver].blocks) ver += 1;
+      const spec = V_SPEC[ver];
+      const dataCap = spec.total - spec.ec * spec.blocks;
+      const payload = bytes.slice(0, dataCap - 2);
+
+      const bits = [];
+      const pushBits = (val, len) => {
+        for (let i = len - 1; i >= 0; i -= 1) bits.push((val >>> i) & 1);
+      };
+      pushBits(0b0100, 4);
+      pushBits(payload.length, 8);
+      payload.forEach((b) => pushBits(b, 8));
+      for (let i = 0; i < 4 && bits.length < dataCap * 8; i += 1) bits.push(0);
+      while (bits.length % 8 !== 0) bits.push(0);
+      const dataWords = [];
+      for (let i = 0; i < bits.length; i += 8) {
+        let b = 0;
+        for (let j = 0; j < 8; j += 1) b = (b << 1) | bits[i + j];
+        dataWords.push(b);
+      }
+      const pads = [0xec, 0x11];
+      let pIdx = 0;
+      while (dataWords.length < dataCap) {
+        dataWords.push(pads[pIdx % 2]);
+        pIdx += 1;
+      }
+
+      // GF(256) Reed-Solomon
+      const exp = new Uint8Array(512);
+      const log = new Uint8Array(256);
+      let x = 1;
+      for (let i = 0; i < 255; i += 1) {
+        exp[i] = x;
+        log[x] = i;
+        x <<= 1;
+        if (x & 0x100) x ^= 0x11d;
+      }
+      for (let i = 255; i < 512; i += 1) exp[i] = exp[i - 255];
+      const gfMul = (a, b) => (a === 0 || b === 0 ? 0 : exp[log[a] + log[b]]);
+
+      let gen = [1];
+      for (let i = 0; i < spec.ec; i += 1) {
+        const next = new Array(gen.length + 1).fill(0);
+        for (let j = 0; j < gen.length; j += 1) {
+          next[j] ^= gen[j];
+          next[j + 1] ^= gfMul(gen[j], exp[i]);
+        }
+        gen = next;
+      }
+
+      const rsEncode = (block) => {
+        const rem = new Array(spec.ec).fill(0);
+        block.forEach((b) => {
+          const factor = b ^ rem.shift();
+          rem.push(0);
+          for (let j = 0; j < spec.ec; j += 1) rem[j] ^= gfMul(gen[j + 1], factor);
+        });
+        return rem;
+      };
+
+      const dBlocks = [];
+      const eBlocks = [];
+      const bLen = dataCap / spec.blocks;
+      for (let b = 0; b < spec.blocks; b += 1) {
+        const slice = dataWords.slice(b * bLen, (b + 1) * bLen);
+        dBlocks.push(slice);
+        eBlocks.push(rsEncode(slice));
+      }
+      const finalWords = [];
+      for (let i = 0; i < bLen; i += 1) for (let b = 0; b < spec.blocks; b += 1) finalWords.push(dBlocks[b][i]);
+      for (let i = 0; i < spec.ec; i += 1) for (let b = 0; b < spec.blocks; b += 1) finalWords.push(eBlocks[b][i]);
+
+      const n = spec.size;
+      const mat = Array.from({ length: n }, () => new Array(n).fill(null));
+      const isFunc = Array.from({ length: n }, () => new Array(n).fill(false));
+      const setMod = (r, c, v, fn = true) => {
+        if (r >= 0 && r < n && c >= 0 && c < n) {
+          mat[r][c] = Boolean(v);
+          if (fn) isFunc[r][c] = true;
+        }
+      };
+
+      const drawFinder = (r, c) => {
+        for (let dy = -1; dy <= 7; dy += 1) {
+          for (let dx = -1; dx <= 7; dx += 1) {
+            const inOuter = dy >= 0 && dy <= 6 && dx >= 0 && dx <= 6;
+            const inRing = dy === 0 || dy === 6 || dx === 0 || dx === 6;
+            const inCore = dy >= 2 && dy <= 4 && dx >= 2 && dx <= 4;
+            setMod(r + dy, c + dx, inOuter && (inRing || inCore), true);
+          }
+        }
+      };
+      drawFinder(0, 0);
+      drawFinder(0, n - 7);
+      drawFinder(n - 7, 0);
+
+      for (let i = 8; i < n - 8; i += 1) {
+        setMod(6, i, i % 2 === 0, true);
+        setMod(i, 6, i % 2 === 0, true);
+      }
+
+      spec.align.forEach((ar) => {
+        spec.align.forEach((ac) => {
+          if ((ar === 6 && ac === 6) || (ar === 6 && ac === n - 7) || (ar === n - 7 && ac === 6)) return;
+          for (let dy = -2; dy <= 2; dy += 1) {
+            for (let dx = -2; dx <= 2; dx += 1) {
+              setMod(ar + dy, ac + dx, Math.max(Math.abs(dy), Math.abs(dx)) !== 1, true);
+            }
+          }
+        });
+      });
+
+      // Reserve format info areas
+      for (let i = 0; i < 9; i += 1) {
+        if (i !== 6) {
+          isFunc[8][i] = true;
+          isFunc[i][8] = true;
+        }
+      }
+      for (let i = 0; i < 8; i += 1) {
+        isFunc[8][n - 1 - i] = true;
+        isFunc[n - 1 - i][8] = true;
+      }
+      setMod(n - 8, 8, true, true);
+
+      // Place data bits
+      const allBits = [];
+      finalWords.forEach((w) => {
+        for (let i = 7; i >= 0; i -= 1) allBits.push((w >>> i) & 1);
+      });
+      let bitIdx = 0;
+      let up = true;
+      for (let right = n - 1; right >= 1; right -= 2) {
+        if (right === 6) right = 5;
+        for (let v = 0; v < n; v += 1) {
+          const r = up ? n - 1 - v : v;
+          for (let j = 0; j < 2; j += 1) {
+            const c = right - j;
+            if (!isFunc[r][c]) {
+              const bit = bitIdx < allBits.length ? Boolean(allBits[bitIdx]) : false;
+              bitIdx += 1;
+              // Mask 0: (r + c) % 2 === 0
+              mat[r][c] = (r + c) % 2 === 0 ? !bit : bit;
+            }
+          }
+        }
+        up = !up;
+      }
+
+      // Format info for ECC Level L (01) + Mask 0 (000) -> 0x77c4
+      const fmt = 0x77c4;
+      const getFmtBit = (i) => ((fmt >>> i) & 1) === 1;
+      for (let i = 0; i <= 5; i += 1) setMod(8, i, getFmtBit(14 - i), true);
+      setMod(8, 7, getFmtBit(8), true);
+      setMod(8, 8, getFmtBit(7), true);
+      setMod(7, 8, getFmtBit(6), true);
+      for (let i = 9; i < 15; i += 1) setMod(14 - i, 8, getFmtBit(14 - i), true);
+      for (let i = 0; i < 8; i += 1) setMod(8, n - 1 - i, getFmtBit(i), true);
+      for (let i = 8; i < 15; i += 1) setMod(n - 15 + i, 8, getFmtBit(i), true);
+
+      return mat;
+    }
+
+    function getQrMatrix(urlText) {
+      const cleanUrl = (urlText || defaultSiteUrl).trim() || defaultSiteUrl;
+      if (typeof window.qrcode === 'function') {
+        try {
+          const qr = window.qrcode(0, 'M');
+          qr.addData(cleanUrl);
+          qr.make();
+          const count = qr.getModuleCount();
+          const mat = [];
+          for (let r = 0; r < count; r += 1) {
+            const row = [];
+            for (let c = 0; c < count; c += 1) row.push(qr.isDark(r, c));
+            mat.push(row);
+          }
+          return mat;
+        } catch {}
+      }
+      return generateFallbackQrMatrix(cleanUrl);
+    }
+
+    function drawQrToCanvas(canvas, urlText, darkColor = '#172554', lightColor = '#ffffff') {
+      const mat = getQrMatrix(urlText);
+      const count = mat.length;
+      const margin = 2;
+      const total = count + margin * 2;
+      const size = canvas.width;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = lightColor;
+      ctx.fillRect(0, 0, size, size);
+
+      const cell = size / total;
+      ctx.fillStyle = darkColor;
+      for (let r = 0; r < count; r += 1) {
+        for (let c = 0; c < count; c += 1) {
+          if (mat[r][c]) {
+            const x = Math.floor((c + margin) * cell);
+            const y = Math.floor((r + margin) * cell);
+            const w = Math.ceil((c + margin + 1) * cell) - x;
+            const h = Math.ceil((r + margin + 1) * cell) - y;
+            ctx.fillRect(x, y, w, h);
+          }
+        }
+      }
+    }
+
+    function updateCardPreview() {
+      const sender = qrSenderInput.value.trim() || 'Tập thể Lớp 3/5 · Trường TH Chi Lăng';
+      const recipient = qrRecipientInput.value.trim() || 'Kính tặng Cô giáo chủ nhiệm & Quý Thầy Cô';
+      const wish = qrWishInput.value.trim() || 'Kính chúc quý thầy cô ngày 20/11 thật nhiều niềm vui và hạnh phúc!';
+      const url = qrUrlInput.value.trim() || defaultSiteUrl;
+
+      previewSender.textContent = sender;
+      previewRecipient.textContent = recipient;
+      previewWish.textContent = `“${wish}”`;
+      cardPreviewEl.dataset.theme = activeCardTheme;
+      drawQrToCanvas(qrCanvas, url, '#172554', '#ffffff');
+    }
+
+    [qrSenderInput, qrRecipientInput, qrWishInput, qrUrlInput].forEach((input) => {
+      input.addEventListener('input', updateCardPreview);
+    });
+
+    presetChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        qrWishInput.value = chip.dataset.wish;
+        updateCardPreview();
+      });
+    });
+
+    themeSwatches.forEach((swatch) => {
+      swatch.addEventListener('click', () => {
+        activeCardTheme = swatch.dataset.cardTheme;
+        themeSwatches.forEach((s) => s.setAttribute('aria-pressed', String(s === swatch)));
+        updateCardPreview();
+      });
+    });
+
+    // High-resolution Greeting Card PNG Exporter (1200 x 760)
+    function wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, maxLines = 5) {
+      const words = text.split(/\s+/);
+      let line = '';
+      let currentY = y;
+      let linesCount = 0;
+      for (let i = 0; i < words.length; i += 1) {
+        const testLine = line ? `${line} ${words[i]}` : words[i];
+        if (ctx.measureText(testLine).width > maxWidth && line) {
+          ctx.fillText(line, x, currentY);
+          line = words[i];
+          currentY += lineHeight;
+          linesCount += 1;
+          if (linesCount >= maxLines - 1) break;
+        } else {
+          line = testLine;
+        }
+      }
+      if (line) {
+        ctx.fillText(line, x, currentY);
+        currentY += lineHeight;
+      }
+      return currentY;
+    }
+
+    downloadCardBtn.addEventListener('click', () => {
+      const exportCanvas = document.createElement('canvas');
+      exportCanvas.width = 1200;
+      exportCanvas.height = 760;
+      const ctx = exportCanvas.getContext('2d');
+
+      const palette = {
+        sun: { bg1: '#fffbeb', bg2: '#fef3c7', border: '#f59e0b', badgeBg: '#ffe4e6', badgeText: '#be123c' },
+        rose: { bg1: '#fff1f2', bg2: '#ffe4e6', border: '#fb7185', badgeBg: '#fef3c7', badgeText: '#b45309' },
+        sky: { bg1: '#f0f9ff', bg2: '#dbeafe', border: '#38bdf8', badgeBg: '#ffe4e6', badgeText: '#be123c' },
+      }[activeCardTheme];
+
+      // Outer gradient background
+      const grad = ctx.createLinearGradient(0, 0, 1200, 760);
+      grad.addColorStop(0, palette.bg1);
+      grad.addColorStop(1, palette.bg2);
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1200, 760);
+
+      // Outer border
+      ctx.strokeStyle = palette.border;
+      ctx.lineWidth = 10;
+      ctx.strokeRect(20, 20, 1160, 720);
+
+      // Inner white notebook paper card
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(54, 54, 1092, 652);
+      ctx.strokeStyle = palette.border;
+      ctx.lineWidth = 3;
+      ctx.setLineDash([12, 8]);
+      ctx.strokeRect(54, 54, 1092, 652);
+      ctx.setLineDash([]);
+
+      // Subtle primary school notebook grid lines
+      ctx.strokeStyle = 'rgba(147, 197, 253, 0.25)';
+      ctx.lineWidth = 1;
+      for (let gx = 80; gx < 1140; gx += 32) {
+        ctx.beginPath();
+        ctx.moveTo(gx, 60);
+        ctx.lineTo(gx, 700);
+        ctx.stroke();
+      }
+      for (let gy = 80; gy < 700; gy += 32) {
+        ctx.beginPath();
+        ctx.moveTo(60, gy);
+        ctx.lineTo(1140, gy);
+        ctx.stroke();
+      }
+
+      // Header Pill Badge
+      ctx.fillStyle = palette.badgeBg;
+      ctx.fillRect(96, 96, 560, 44);
+      ctx.fillStyle = palette.badgeText;
+      ctx.font = '800 20px "Nunito", sans-serif';
+      ctx.fillText('☀ THIỆP TRI ÂN 20/11 · BÁO TƯỜNG NẮNG ẤM SÂN TRƯỜNG', 114, 125);
+
+      // Recipient Heading
+      const recipient = qrRecipientInput.value.trim() || 'Kính tặng Cô giáo chủ nhiệm & Quý Thầy Cô';
+      ctx.fillStyle = '#172554';
+      ctx.font = '800 34px "Baloo 2", "Nunito", sans-serif';
+      wrapCanvasText(ctx, recipient, 96, 196, 680, 44, 2);
+
+      // Quote box left bar
+      ctx.fillStyle = '#e11d48';
+      ctx.fillRect(96, 260, 6, 220);
+
+      // Wish text
+      const wish = `“${qrWishInput.value.trim() || 'Kính chúc quý thầy cô ngày 20/11 thật nhiều niềm vui và hạnh phúc!'}”`;
+      ctx.fillStyle = '#4c1d95';
+      ctx.font = '600 28px "Patrick Hand", "Nunito", sans-serif';
+      wrapCanvasText(ctx, wish, 122, 298, 640, 42, 5);
+
+      // Sender footer
+      const sender = qrSenderInput.value.trim() || 'Tập thể Lớp 3/5 · Trường TH Chi Lăng';
+      ctx.fillStyle = '#1e3a8a';
+      ctx.font = '800 24px "Nunito", sans-serif';
+      ctx.fillText(`💌 Người gửi: ${sender}`, 96, 565);
+
+      ctx.fillStyle = '#64748b';
+      ctx.font = '700 18px "Nunito", sans-serif';
+      ctx.fillText('Lớp 3/5 · Trường Tiểu học Chi Lăng · Chào mừng Ngày Nhà giáo Việt Nam 20/11', 96, 615);
+
+      // QR Code Card on the right
+      const qrBoxX = 825;
+      const qrBoxY = 140;
+      ctx.fillStyle = '#eff6ff';
+      ctx.fillRect(qrBoxX, qrBoxY, 275, 360);
+      ctx.strokeStyle = '#93c5fd';
+      ctx.lineWidth = 3;
+      ctx.strokeRect(qrBoxX, qrBoxY, 275, 360);
+
+      const tempQr = document.createElement('canvas');
+      tempQr.width = 235;
+      tempQr.height = 235;
+      drawQrToCanvas(tempQr, qrUrlInput.value.trim() || defaultSiteUrl, '#172554', '#ffffff');
+      ctx.drawImage(tempQr, qrBoxX + 20, qrBoxY + 20);
+
+      ctx.fillStyle = '#172554';
+      ctx.font = '800 19px "Nunito", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('QUÉT QR ĐỌC BÁO TƯỜNG', qrBoxX + 137, qrBoxY + 292);
+      ctx.fillStyle = '#e11d48';
+      ctx.font = '800 17px "Nunito", sans-serif';
+      ctx.fillText('23 trang báo Lớp 3/5', qrBoxX + 137, qrBoxY + 322);
+      ctx.textAlign = 'left';
+
+      const link = document.createElement('a');
+      link.download = 'Thiep-20-11-Lop-3-5-QR.png';
+      link.href = exportCanvas.toDataURL('image/png');
+      link.click();
+      copyToast.textContent = '✅ Đã tải ảnh thiệp QR về máy!';
+    });
+
+    copyLinkBtn.addEventListener('click', async () => {
+      const urlToCopy = qrUrlInput.value.trim() || defaultSiteUrl;
+      try {
+        await navigator.clipboard.writeText(urlToCopy);
+        copyToast.textContent = '✅ Đã sao chép đường dẫn báo tường!';
+      } catch {
+        qrUrlInput.select();
+        copyToast.textContent = '📋 Bạn hãy nhấn Ctrl+C để sao chép link nhé!';
+      }
+    });
+
+    // Re-render QR once external qrcode-generator finishes loading (if online)
+    window.addEventListener('load', updateCardPreview);
+    updateCardPreview();
+
+    // Scroll Reveal Observer
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    if (!motion.matches && 'IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          target.classList.add('is-revealed');
+          revealObserver.unobserve(target);
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('[data-reveal]').forEach((element) => {
+        element.classList.add('will-reveal');
+        revealObserver.observe(element);
+      });
+    }
+  </script>
+</body>
+</html>
