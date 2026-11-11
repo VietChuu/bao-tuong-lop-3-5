@@ -733,7 +733,7 @@
 
     /* Vở Sạch Chữ Đẹp & Góc Học Tập Strip */
     .activity-box {
-      margin-top: 2.2rem;
+      margin-bottom: 2rem;
       padding: clamp(1.25rem, 2.5vw, 1.85rem);
       background: var(--white);
       border: 2px solid #bbf7d0;
@@ -763,7 +763,7 @@
     }
     .activity-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: clamp(0.8rem, 2vw, 1.2rem);
     }
     .activity-card {
@@ -2050,8 +2050,7 @@
       </a>
       <nav class="site-nav" id="muc-luc" aria-label="Mục lục báo tường">
         <a href="#loi-ngo"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg> Trang bìa</a>
-        <a href="#tri-an"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg> Thơ &amp; Truyện</a>
-        <a href="#album"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 23 Trang báo</a>
+        <a href="#album"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> Khoảnh khắc &amp; 23 trang báo</a>
         <a href="#tro-choi"><svg class="icon" aria-hidden="true"><use href="#i-gamepad"/></svg> Trò chơi</a>
         <a href="#thiep-qr"><svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg> Tạo thiệp QR</a>
         <a href="#luu-but"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Lưu bút</a>
@@ -2156,25 +2155,25 @@
     <!-- HIGHLIGHTS RIBBON -->
     <div class="shell highlights-bar" aria-label="Tóm tắt nội dung tờ báo tường">
       <div class="highlights-grid">
-        <a class="highlight-pill" href="#album" style="--pill-border:#93c5fd; --pill-bg:#dbeafe; --pill-color:#1d4ed8;">
-          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+        <a class="highlight-pill" href="#album" style="--pill-border:#86efac; --pill-bg:#dcfce7; --pill-color:#15803d;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span>
           <span class="highlight-copy">
-            <strong>23 Trang báo</strong>
-            <span>Trọn vẹn kỷ niệm Lớp 3/5</span>
+            <strong>Ảnh học trò &amp; Tranh chữ</strong>
+            <span>Khoảnh khắc các em nhỏ Lớp 3/5</span>
           </span>
         </a>
-        <a class="highlight-pill" href="#tri-an" style="--pill-border:#fda4af; --pill-bg:#ffe4e6; --pill-color:#e11d48;">
+        <a class="highlight-pill" href="#album" style="--pill-border:#fda4af; --pill-bg:#ffe4e6; --pill-color:#e11d48;">
           <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg></span>
           <span class="highlight-copy">
-            <strong>11 Thơ &amp; Truyện</strong>
+            <strong>11 Bài văn &amp; Thơ</strong>
             <span>Lời văn trong sáng, ấm áp</span>
           </span>
         </a>
-        <a class="highlight-pill" href="#net-chu" style="--pill-border:#86efac; --pill-bg:#dcfce7; --pill-color:#15803d;">
-          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span>
+        <a class="highlight-pill" href="#album" style="--pill-border:#93c5fd; --pill-bg:#dbeafe; --pill-color:#1d4ed8;">
+          <span class="highlight-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
           <span class="highlight-copy">
-            <strong>05 Trang tranh &amp; Chữ</strong>
-            <span>Vở sạch chữ đẹp &amp; hội họa</span>
+            <strong>Trọn bộ 23 Trang báo</strong>
+            <span>Kỷ niệm dưới mái trường Chi Lăng</span>
           </span>
         </a>
         <a class="highlight-pill" href="#luu-but" style="--pill-border:#fcd34d; --pill-bg:#fef3c7; --pill-color:#b45309;">
@@ -2187,118 +2186,72 @@
       </div>
     </div>
 
-    <!-- SECTION 1: GÓC TRI ÂN, THƠ VĂN & VỞ SẠCH CHỮ ĐẸP -->
-    <section class="section tributes" id="tri-an" aria-labelledby="tri-an-title">
-      <div class="shell">
-        <header class="section-head" data-reveal>
-          <div>
-            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Góc văn học tuổi thơ</p>
-            <h2 id="tri-an-title">Lời ngỏ, Thơ &amp; <em>Truyện kể</em></h2>
-          </div>
-          <p class="section-intro">
-            Những vần thơ bốn chữ, năm chữ và những câu chuyện nhỏ dưới mái trường được chúng em gom góp thành món quà gửi tặng thầy cô.
-          </p>
-        </header>
-
-        <div class="tributes-grid" data-reveal>
-          <!-- Card 1: Lời ngỏ -->
-          <article class="paper-card">
-            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Trang 02 · Lời ngỏ</span>
-            <h3>Chuyến đò yêu thương</h3>
-            <p>Tháng Mười Một lại về, mang theo những tia nắng dịu dàng và những cảm xúc thân thương hướng về ngày Nhà giáo Việt Nam 20/11.</p>
-            <p>Thầy cô không chỉ dạy chúng em đọc hay, viết đẹp, làm toán giỏi mà còn dạy chúng em biết yêu thương, sẻ chia và sống trung thực.</p>
-            <a class="card-link" data-photo="2" href="./Asset/2.jpg">
-              Đọc trọn trang Lời ngỏ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-            </a>
-          </article>
-
-          <!-- Card 2: Thơ trên giấy ô ly -->
-          <article class="paper-card poem">
-            <span class="grade-stamp"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> Điểm 10</span>
-            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg> Trang 03 · Thơ bốn chữ</span>
-            <h3>Bụi phấn yêu thương</h3>
-            <p class="poem-text">
-              Bụi phấn bay bay,<br>
-              Trên mái tóc thầy.<br>
-              Từng dòng chữ nhỏ,<br>
-              Chắp cánh em bay.
-            </p>
-            <a class="card-link" data-photo="3" href="./Asset/3.jpg">
-              Đọc cả 3 bài thơ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-            </a>
-          </article>
-
-          <!-- Card 3: Truyện ngắn nổi bật -->
-          <article class="paper-card story">
-            <span class="card-tag"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Trang 04 · Truyện ngắn</span>
-            <h3>Bông hoa điểm 10</h3>
-            <p>Câu chuyện về bạn Nam từng lo lắng khi làm sai phép tính Toán, nhờ lời động viên dịu dàng của cô giáo: <em>“Chưa làm đúng hôm nay không có nghĩa là ngày mai con không làm được”</em> mà kiên trì đạt điểm 10.</p>
-            <a class="card-link" data-photo="4" href="./Asset/4.jpg">
-              Đọc câu chuyện của Nam <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-            </a>
-          </article>
-        </div>
-
-        <!-- Vở sạch chữ đẹp & Nét vẽ tri ân -->
-        <div class="activity-box" id="net-chu" data-reveal>
-          <div class="activity-header">
-            <h3 class="activity-heading">
-              <svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg>
-              Góc Vở sạch chữ đẹp &amp; Tranh vẽ của chúng em
-            </h3>
-            <span class="activity-sub">Bấm vào từng ảnh để xem trọn bài viết chữ đẹp và tranh vẽ 20/11</span>
-          </div>
-          <div class="activity-grid">
-            <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
-              <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Bạn nhỏ cúi bên vở tập viết"></span>
-              <span class="caption"><span>Nắn nót từng nét</span><span class="caption-tag">Trang 18</span></span>
-            </a>
-            <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
-              <span class="image-slot crop" data-crop="1438 673 337 277" data-alt="Bạn nhỏ ngồi viết bên bàn học"></span>
-              <span class="caption"><span>Những người bạn tốt</span><span class="caption-tag">Trang 19</span></span>
-            </a>
-            <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
-              <span class="image-slot crop" data-crop="1400 182 367 302" data-alt="Học sinh làm bài bên hộp bút màu"></span>
-              <span class="caption"><span>Chăm chút bài làm</span><span class="caption-tag">Trang 20</span></span>
-            </a>
-            <a class="activity-card" data-photo="12" href="./Asset/12.jpg">
-              <span class="image-slot crop" data-crop="570 260 752 545" data-alt="Tranh vẽ cô giáo và học sinh chào mừng 20/11"></span>
-              <span class="caption"><span>Nét vẽ tri ân</span><span class="caption-tag">Trang 12</span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: ALBUM TRỌN BỘ 23 TRANG BÁO TƯỜNG -->
+    <!-- SECTION: KHOẢNH KHẮC DƯỚI MÁI TRƯỜNG (ƯU TIÊN HÌNH ẢNH CÁC EM NHỎ, BÀI VĂN & TRANH VẼ ĐẦU TIÊN) -->
     <section class="section gallery-section" id="album" aria-labelledby="album-title">
       <div class="shell">
         <header class="section-head" data-reveal>
           <div>
-            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> Trọn bộ 23 trang báo tường</p>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> Hình ảnh học trò, bài văn, tranh vẽ &amp; 23 trang báo</p>
             <h2 id="album-title">Khoảnh khắc dưới <em>mái trường</em></h2>
           </div>
           <p class="section-intro">
-            Thầy cô, ba mẹ và các bạn có thể chọn xem theo từng chuyên mục hoặc bấm vào từng trang báo để đọc chữ to, rõ ràng.
+            Những gương mặt học trò Lớp 3/5 chăm chú bên trang vở ô ly, những bức tranh vẽ đầy sắc màu và các bài văn, vần thơ tri ân thầy cô nhân ngày 20/11.
           </p>
         </header>
+
+        <!-- Ưu tiên hiển thị đầu tiên: Hình ảnh các em nhỏ Lớp 3/5 bên trang vở & hộp màu -->
+        <div class="activity-box" id="net-chu" data-reveal>
+          <div class="activity-header">
+            <h3 class="activity-heading">
+              <svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg>
+              Hình ảnh các em nhỏ Lớp 3/5 chăm chú luyện chữ &amp; vẽ tranh
+            </h3>
+            <span class="activity-sub">Bấm vào từng bức ảnh để xem trọn vẹn bài văn viết tay và trang báo của các em</span>
+          </div>
+          <div class="activity-grid">
+            <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
+              <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Em nhỏ Lớp 3/5 chăm chú bên trang vở tập viết"></span>
+              <span class="caption"><span>Nắn nót từng nét chữ</span><span class="caption-tag">Trang 18</span></span>
+            </a>
+            <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
+              <span class="image-slot crop" data-crop="1245 490 400 330" data-alt="Bạn nhỏ thắt nơ vàng viết bài Cô giáo mà em yêu quý"></span>
+              <span class="caption"><span>Cô giáo mà em yêu quý</span><span class="caption-tag">Trang 18</span></span>
+            </a>
+            <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
+              <span class="image-slot crop" data-crop="1065 505 345 285" data-alt="Em nhỏ chăm chú luyện viết chữ đẹp trong giờ học"></span>
+              <span class="caption"><span>Chăm chú giờ tập viết</span><span class="caption-tag">Trang 19</span></span>
+            </a>
+            <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
+              <span class="image-slot crop" data-crop="1438 625 337 277" data-alt="Bạn nhỏ ngồi viết câu chuyện Những người bạn tốt"></span>
+              <span class="caption"><span>Những người bạn tốt</span><span class="caption-tag">Trang 19</span></span>
+            </a>
+            <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
+              <span class="image-slot crop" data-crop="1400 182 367 302" data-alt="Bạn nhỏ say sưa tô màu bức tranh chào mừng 20/11"></span>
+              <span class="caption"><span>Say sưa tô màu 20/11</span><span class="caption-tag">Trang 20</span></span>
+            </a>
+            <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
+              <span class="image-slot crop" data-crop="1250 495 395 325" data-alt="Bạn nhỏ nắn nót viết câu chuyện Người bạn tốt bụng"></span>
+              <span class="caption"><span>Người bạn tốt bụng</span><span class="caption-tag">Trang 20</span></span>
+            </a>
+          </div>
+        </div>
 
         <div class="gallery-toolbar">
           <div class="filters" role="group" aria-label="Lọc trang báo theo chuyên mục">
             <button class="filter" type="button" aria-pressed="true" aria-controls="gallery" data-filter="all">
               <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Tất cả (23 trang)
             </button>
-            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="intro">
-              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Bìa &amp; Lời ngỏ (2)
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="art">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Ảnh học trò, Chữ đẹp &amp; Tranh vẽ (5)
             </button>
             <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="stories">
-              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Thơ &amp; Truyện kể (9)
-            </button>
-            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="art">
-              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Tranh vẽ &amp; Chữ đẹp (5)
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Bài văn, Thơ &amp; Truyện kể (9)
             </button>
             <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="wishes">
-              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Lưu bút &amp; Danh ngôn (7)
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Lưu bút viết tay &amp; Danh ngôn (7)
+            </button>
+            <button class="filter" type="button" aria-pressed="false" aria-controls="gallery" data-filter="intro">
+              <svg class="icon check-icon" aria-hidden="true"><use href="#i-check"/></svg> Bìa báo &amp; Lời ngỏ (2)
             </button>
           </div>
           <div class="toolbar-meta">
@@ -2598,7 +2551,7 @@
     </div>
   </footer>
 
-  <audio id="background-music" src="./Asset/bui-phan-piano2.mp3" preload="none" loop></audio>
+  <audio id="background-music" src="./Asset/bui-phan-piano2.mp3" preload="auto" autoplay loop></audio>
 
   <!-- LIGHTBOX DIALOG -->
   <dialog class="lightbox" id="lightbox" aria-label="Đọc trang báo tường phóng to">
@@ -2638,6 +2591,7 @@
     const musicButtons = document.querySelectorAll('[data-music-toggle]');
     const musicStatus = document.querySelector('#music-status');
     backgroundMusic.volume = 0.35;
+    let userPausedMusic = false;
 
     function updateMusicButtons() {
       const playing = !backgroundMusic.paused && !backgroundMusic.error;
@@ -2648,14 +2602,53 @@
       });
     }
 
-    backgroundMusic.addEventListener('play', updateMusicButtons);
+    const gestureEvents = ['pointerdown', 'touchstart', 'keydown', 'wheel', 'click'];
+    function removeGestureUnlock() {
+      gestureEvents.forEach((evt) => document.removeEventListener(evt, unlockMusicOnGesture, true));
+    }
+
+    async function tryAutoplayMusic() {
+      if (userPausedMusic || !backgroundMusic.paused) return;
+      try {
+        await backgroundMusic.play();
+        musicStatus.textContent = '';
+        removeGestureUnlock();
+      } catch {
+        // Browser requires a user gesture before unmuted audio can start; unlock on first interaction
+      }
+    }
+
+    function unlockMusicOnGesture(event) {
+      if (event.target?.closest?.('[data-music-toggle]')) return;
+      if (userPausedMusic) {
+        removeGestureUnlock();
+        return;
+      }
+      backgroundMusic.play().then(() => {
+        musicStatus.textContent = '';
+        removeGestureUnlock();
+      }).catch(() => {});
+    }
+
+    gestureEvents.forEach((evt) => document.addEventListener(evt, unlockMusicOnGesture, { capture: true, passive: true }));
+    tryAutoplayMusic();
+    window.addEventListener('DOMContentLoaded', tryAutoplayMusic);
+    window.addEventListener('pageshow', tryAutoplayMusic);
+
+    backgroundMusic.addEventListener('play', () => {
+      removeGestureUnlock();
+      updateMusicButtons();
+    });
     backgroundMusic.addEventListener('pause', updateMusicButtons);
     backgroundMusic.addEventListener('error', updateMusicButtons);
     musicButtons.forEach((button) => button.addEventListener('click', async () => {
       if (!backgroundMusic.paused) {
+        userPausedMusic = true;
+        removeGestureUnlock();
         backgroundMusic.pause();
         return;
       }
+      userPausedMusic = false;
       musicStatus.textContent = '';
       if (backgroundMusic.error) backgroundMusic.load();
       try {
@@ -2666,34 +2659,39 @@
     }));
 
     const categoryLabels = {
-      intro: 'Bìa & Lời ngỏ',
-      stories: 'Thơ & Truyện kể',
-      art: 'Tranh & Chữ đẹp',
-      wishes: 'Lưu bút & Danh ngôn',
+      art: 'Ảnh học trò, Chữ đẹp & Tranh vẽ',
+      stories: 'Bài văn, Thơ & Truyện kể',
+      wishes: 'Lưu bút viết tay & Danh ngôn',
+      intro: 'Bìa báo & Lời ngỏ',
     };
 
-    // Reading order of all 23 pages of Class 3/5's digital wall newspaper
+    // Priority order in "Khoảnh khắc dưới mái trường":
+    // 1. Hình ảnh các em nhỏ + Bài văn viết tay (Trang 18, 19, 20)
+    // 2. Tranh vẽ sắc màu 20/11 (Trang 12, 13)
+    // 3. Lưu bút viết tay trên giấy ô ly của các em (Trang 14, 15, 16, 17)
+    // 4. Các bài thơ & truyện kể học trò (Trang 03 -> 11)
+    // 5. Bìa báo, Lời ngỏ & Lời hay ý đẹp (Trang 01, 02, 21, 22, 23)
     const photos = [
+      { id: 18, category: 'art', title: 'Ảnh học trò & Bài văn: Cô giáo mà em yêu quý', description: 'Bài thi viết chữ đẹp của bạn Trần Phạm Gia Huy Lớp 3/5 cùng khoảnh khắc các em nhỏ nắn nót bên trang vở.' },
+      { id: 19, category: 'art', title: 'Ảnh học trò & Bài văn: Những người bạn tốt', description: 'Câu chuyện viết tay của bạn Nguyễn Hoàng Bảo Minh Lớp 3/5 và hình ảnh các bạn nhỏ chăm chú trong giờ học.' },
+      { id: 20, category: 'art', title: 'Ảnh học trò & Bài văn: Người bạn tốt bụng', description: 'Bài viết chữ đẹp của bạn Nguyễn Ngọc Xuân An Lớp 3/5 cùng hình ảnh các bạn say sưa tô màu và luyện chữ.' },
+      { id: 12, category: 'art', title: 'Tranh vẽ học trò: Nét vẽ tri ân 20/11', description: 'Ba bức tranh màu tươi sáng của các họa sĩ nhí Lớp 3/5 kính tặng cô giáo nhân ngày 20/11.' },
+      { id: 13, category: 'art', title: 'Tranh vẽ học trò: Con thuyền tri thức', description: 'Những bức tranh vẽ cô giáo và mái trường đầy ắp tình cảm, sắc màu tuổi thơ của Lớp 3/5.' },
+      { id: 14, category: 'wishes', title: 'Lưu bút viết tay: Ngọn nến của thầy', description: 'Trang vở ô ly viết tay nắn nót của học sinh ví người thầy như ngọn nến thắp sáng đường đi.' },
+      { id: 15, category: 'wishes', title: 'Lưu bút viết tay: Mỗi ngày đến trường', description: 'Cánh thư viết tay của các em nhỏ về niềm vui được khám phá bao điều mới lạ ở trường.' },
+      { id: 16, category: 'wishes', title: 'Lưu bút viết tay: Câu ơn thầy', description: 'Hai câu thơ tri ân thầy cô được học sinh trình bày sạch đẹp trên trang giấy ô ly.' },
+      { id: 17, category: 'wishes', title: 'Lưu bút viết tay: Lời nhắn bên nhành hoa', description: 'Lời chúc 20/11 viết tay nắn nót của các em học sinh gửi tặng quý thầy cô.' },
+      { id: 3, category: 'stories', title: 'Trang thơ tuổi thơ: Bụi phấn yêu thương', description: 'Ba bài thơ bốn chữ, năm chữ trong sáng: Bụi phấn yêu thương, Mái trường mến yêu và Bạn cùng tiến.' },
+      { id: 4, category: 'stories', title: 'Truyện ngắn: Bông hoa điểm 10', description: 'Câu chuyện về bạn Nam kiên trì luyện tập Toán nhờ lời động viên dịu dàng của cô giáo.' },
+      { id: 5, category: 'stories', title: 'Truyện kể: Lời xin lỗi trong ngăn bàn', description: 'Chuyện nhỏ giờ ra chơi về lòng dũng cảm nhận lỗi và tình bạn đẹp dưới mái trường.' },
+      { id: 6, category: 'stories', title: 'Bài văn: Người gieo những hạt mầm', description: 'Bài tản văn xúc động kể về cô giáo và những điều tốt đẹp cô vun trồng mỗi ngày.' },
+      { id: 7, category: 'stories', title: 'Bài văn: Góc sân trường đầy nắng', description: 'Kỷ niệm thân thương về góc sân trường rợp bóng cây qua lời kể học trò Lớp 3/5.' },
+      { id: 8, category: 'stories', title: 'Bài văn: Món quà tháng Mười Một', description: 'Những dòng văn ấm áp gửi tặng thầy cô nhân ngày Nhà giáo Việt Nam 20/11.' },
+      { id: 9, category: 'stories', title: 'Truyện kể: Ánh đèn cuối lớp', description: 'Hình ảnh cô Lan tận tụy ở lại sau giờ học để ân cần hướng dẫn học trò.' },
+      { id: 10, category: 'stories', title: 'Truyện kể: Chiếc ghế dành cho bạn mới', description: 'Ngày đầu đến lớp của bạn Mai và sự chào đón ấm áp của cô cùng cả lớp.' },
+      { id: 11, category: 'stories', title: 'Truyện kể: Bài học dưới gốc phượng', description: 'Một cơn giận dỗi vì quả bóng trở thành bài học quý giá về sự nhường nhịn.' },
       { id: 1, category: 'intro', title: 'Bìa báo: Nắng ấm sân trường', description: 'Bìa báo tường 20/11 Lớp 3/5 với hình ảnh cô giáo và học sinh bên bó hoa tươi thắm.' },
       { id: 2, category: 'intro', title: 'Lời ngỏ: Chuyến đò yêu thương', description: 'Lời tri ân tháng Mười Một của tập thể Lớp 3/5 gửi đến quý thầy cô giáo.' },
-      { id: 3, category: 'stories', title: 'Trang thơ tuổi thơ', description: 'Ba bài thơ trong sáng: Bụi phấn yêu thương, Mái trường mến yêu và Bạn cùng tiến.' },
-      { id: 4, category: 'stories', title: 'Truyện ngắn: Bông hoa điểm 10', description: 'Câu chuyện về bạn Nam kiên trì luyện tập Toán nhờ lời động viên dịu dàng của cô giáo.' },
-      { id: 5, category: 'stories', title: 'Lời xin lỗi trong ngăn bàn', description: 'Chuyện nhỏ giờ ra chơi về lòng dũng cảm nhận lỗi và tình bạn đẹp.' },
-      { id: 6, category: 'stories', title: 'Người gieo những hạt mầm', description: 'Bài tản văn xúc động kể về cô giáo và những điều tốt đẹp cô vun trồng mỗi ngày.' },
-      { id: 7, category: 'stories', title: 'Góc sân trường đầy nắng', description: 'Kỷ niệm thân thương về góc sân trường rợp bóng cây qua lời kể học trò.' },
-      { id: 8, category: 'stories', title: 'Món quà tháng Mười Một', description: 'Những dòng tản văn ấm áp gửi tặng thầy cô nhân ngày Nhà giáo Việt Nam 20/11.' },
-      { id: 9, category: 'stories', title: 'Ánh đèn cuối lớp', description: 'Hình ảnh cô Lan tận tụy ở lại sau giờ học để ân cần hướng dẫn học trò.' },
-      { id: 10, category: 'stories', title: 'Chiếc ghế dành cho bạn mới', description: 'Ngày đầu đến lớp của bạn Mai và sự chào đón ấm áp của cô cùng cả lớp.' },
-      { id: 11, category: 'stories', title: 'Bài học dưới gốc phượng', description: 'Một cơn giận dỗi vì quả bóng trở thành bài học quý giá về sự nhường nhịn.' },
-      { id: 12, category: 'art', title: 'Góc hội họa: Nét vẽ tri ân', description: 'Ba bức tranh màu tươi sáng của học sinh chúc mừng Ngày Nhà giáo Việt Nam 20/11.' },
-      { id: 13, category: 'art', title: 'Sắc màu ngày 20/11', description: 'Những bức tranh vẽ cô giáo và mái trường đầy ắp tình cảm của các họa sĩ nhí.' },
-      { id: 14, category: 'wishes', title: 'Lưu bút: Ngọn nến của thầy', description: 'Trang vở ô ly viết tay nắn nót ví người thầy như ngọn nến thắp sáng đường đi.' },
-      { id: 15, category: 'wishes', title: 'Lưu bút: Mỗi ngày đến trường', description: 'Cánh thư viết tay về niềm vui được khám phá bao điều mới lạ ở trường.' },
-      { id: 16, category: 'wishes', title: 'Lưu bút: Câu ơn thầy', description: 'Hai câu thơ tri ân thầy cô được trình bày sạch đẹp trên trang giấy ô ly.' },
-      { id: 17, category: 'wishes', title: 'Lưu bút: Lời nhắn bên nhành hoa', description: 'Lời chúc 20/11 viết tay nắn nót của học sinh gửi tặng quý thầy cô.' },
-      { id: 18, category: 'art', title: 'Vở sạch chữ đẹp: Cô giáo em yêu', description: 'Bài thi viết chữ đẹp của bạn Trần Phạm Gia Huy Lớp 3/5 và ảnh luyện chữ.' },
-      { id: 19, category: 'art', title: 'Vở sạch chữ đẹp: Những người bạn tốt', description: 'Bài viết chữ đẹp về tình bạn cùng hình ảnh các bạn nhỏ chăm chú bên bàn học.' },
-      { id: 20, category: 'art', title: 'Vở sạch chữ đẹp: Kỷ niệm trang vở', description: 'Từng nét chữ tròn trịa, thẳng hàng thể hiện lòng biết ơn cô giáo dạy dỗ.' },
       { id: 21, category: 'wishes', title: 'Lời hay ý đẹp: Về nghề giáo', description: 'Tuyển tập những câu nói nổi tiếng tôn vinh nghề dạy học cao quý.' },
       { id: 22, category: 'wishes', title: 'Lời hay ý đẹp: Tình thầy trò', description: 'Những câu ca dao, tục ngữ và vần thơ sâu sắc về nghĩa thầy trò.' },
       { id: 23, category: 'wishes', title: 'Lời hay ý đẹp: Niềm vui việc học', description: 'Những lời khuyên bổ ích truyền cảm hứng học tập và rèn luyện mỗi ngày.' },
