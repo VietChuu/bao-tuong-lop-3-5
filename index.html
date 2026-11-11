@@ -940,22 +940,22 @@
     .gallery-card .card-media {
       position: relative;
     }
-    .page-badge {
+    .featured-badge {
       position: absolute;
       top: 0.65rem;
       left: 0.65rem;
       z-index: 2;
       display: inline-flex;
       align-items: center;
-      gap: 0.3rem;
-      padding: 0.28rem 0.7rem;
+      gap: 0.35rem;
+      padding: 0.32rem 0.82rem;
       border-radius: 999px;
-      background: rgba(23, 37, 84, 0.88);
+      background: linear-gradient(135deg, #e11d48, #f59e0b);
       color: var(--white);
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 800;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      border: 1.5px solid #fef08a;
+      box-shadow: 0 3px 10px rgba(225, 29, 72, 0.28);
     }
     .cat-badge {
       position: absolute;
@@ -1014,12 +1014,21 @@
     }
     .gallery-card:hover .caption-cta { color: var(--coral); }
 
+    .gallery-card.is-featured {
+      border-color: #f59e0b;
+      background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+      box-shadow: 0 6px 0 #fbbf24, 0 16px 32px rgba(245, 158, 11, 0.16);
+    }
+    .gallery-card.is-featured:hover {
+      border-color: var(--coral);
+      box-shadow: 0 7px 0 var(--coral), 0 18px 36px rgba(225, 29, 72, 0.18);
+    }
     @media (min-width: 1024px) {
       .gallery-card.is-featured {
         grid-column: span 2;
       }
       .gallery-card.is-featured .caption-title {
-        font-size: 1.35rem;
+        font-size: 1.45rem;
       }
     }
 
@@ -2063,7 +2072,7 @@
           <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
         </button>
         <a class="header-note button button-coral" data-photo="1" href="./Asset/1.jpg">
-          <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Lật đọc từ Trang 1
+          <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Mở đọc Trang bìa
         </a>
       </div>
     </div>
@@ -2085,7 +2094,7 @@
           </p>
           <div class="hero-actions">
             <a class="button button-primary" data-photo="1" href="./Asset/1.jpg">
-              <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Mở đọc từ Trang 1 (23 trang)
+              <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Mở đọc Trang bìa
             </a>
             <a class="button button-coral" href="#tro-choi">
               <svg class="icon" aria-hidden="true"><use href="#i-gamepad"/></svg> Chơi Hái Hoa &amp; Lật Thẻ
@@ -2125,7 +2134,7 @@
             </svg>
             <a class="polaroid polaroid-main" data-photo="1" href="./Asset/1.jpg">
               <span class="image-slot crop" data-crop="521 375 748 700" data-eager data-alt="Cô giáo và học sinh cùng ôm bó hoa tươi thắm trên trang bìa"></span>
-              <span class="polaroid-label">Trang 1: Cô và trò Lớp 3/5</span>
+              <span class="polaroid-label">Bìa báo: Cô và trò Lớp 3/5</span>
             </a>
             <a class="polaroid polaroid-study" data-photo="18" href="./Asset/18.jpg">
               <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Học sinh chăm chú luyện viết chữ đẹp"></span>
@@ -2211,27 +2220,27 @@
           <div class="activity-grid">
             <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
               <span class="image-slot crop" data-crop="1390 185 365 300" data-alt="Em nhỏ Lớp 3/5 chăm chú bên trang vở tập viết"></span>
-              <span class="caption"><span>Nắn nót từng nét chữ</span><span class="caption-tag">Trang 18</span></span>
+              <span class="caption"><span>Nắn nót từng nét chữ</span></span>
             </a>
             <a class="activity-card" data-photo="18" href="./Asset/18.jpg">
               <span class="image-slot crop" data-crop="1245 490 400 330" data-alt="Bạn nhỏ thắt nơ vàng viết bài Cô giáo mà em yêu quý"></span>
-              <span class="caption"><span>Cô giáo mà em yêu quý</span><span class="caption-tag">Trang 18</span></span>
+              <span class="caption"><span>Cô giáo mà em yêu quý</span></span>
             </a>
             <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
               <span class="image-slot crop" data-crop="1065 505 345 285" data-alt="Em nhỏ chăm chú luyện viết chữ đẹp trong giờ học"></span>
-              <span class="caption"><span>Chăm chú giờ tập viết</span><span class="caption-tag">Trang 19</span></span>
+              <span class="caption"><span>Chăm chú giờ tập viết</span></span>
             </a>
             <a class="activity-card" data-photo="19" href="./Asset/19.jpg">
               <span class="image-slot crop" data-crop="1438 625 337 277" data-alt="Bạn nhỏ ngồi viết câu chuyện Những người bạn tốt"></span>
-              <span class="caption"><span>Những người bạn tốt</span><span class="caption-tag">Trang 19</span></span>
+              <span class="caption"><span>Những người bạn tốt</span></span>
             </a>
             <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
               <span class="image-slot crop" data-crop="1400 182 367 302" data-alt="Bạn nhỏ say sưa tô màu bức tranh chào mừng 20/11"></span>
-              <span class="caption"><span>Say sưa tô màu 20/11</span><span class="caption-tag">Trang 20</span></span>
+              <span class="caption"><span>Say sưa tô màu 20/11</span></span>
             </a>
             <a class="activity-card" data-photo="20" href="./Asset/20.jpg">
               <span class="image-slot crop" data-crop="1250 495 395 325" data-alt="Bạn nhỏ nắn nót viết câu chuyện Người bạn tốt bụng"></span>
-              <span class="caption"><span>Người bạn tốt bụng</span><span class="caption-tag">Trang 20</span></span>
+              <span class="caption"><span>Người bạn tốt bụng</span></span>
             </a>
           </div>
         </div>
@@ -2381,28 +2390,28 @@
             <svg class="icon note-icon" aria-hidden="true"><use href="#i-heart"/></svg>
             <blockquote>“Một người thầy giỏi giống như ngọn nến, cháy hết mình để thắp sáng đường đi cho những người khác.”</blockquote>
             <a class="card-link" data-photo="14" href="./Asset/14.jpg">
-              Mở phong thư Trang 14 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              Mở phong thư lưu bút <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
           </article>
           <article class="note">
             <svg class="icon note-icon" aria-hidden="true"><use href="#i-sun"/></svg>
             <blockquote>“Mỗi ngày đến trường là một ngày em khám phá thêm điều mới.”</blockquote>
             <a class="card-link" data-photo="15" href="./Asset/15.jpg">
-              Mở phong thư Trang 15 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              Mở phong thư lưu bút <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
           </article>
           <article class="note">
             <svg class="icon note-icon" aria-hidden="true"><use href="#i-feather"/></svg>
             <blockquote>“Thời gian dẫu bạc mái đầu<br>Tim trò vẫn tạc đậm câu ơn thầy.”</blockquote>
             <a class="card-link" data-photo="16" href="./Asset/16.jpg">
-              Mở phong thư Trang 16 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              Mở phong thư lưu bút <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
           </article>
           <article class="note">
             <svg class="icon note-icon" aria-hidden="true"><use href="#i-sprout"/></svg>
             <blockquote>“Chúng em kính chúc quý thầy cô luôn mạnh khỏe, hạnh phúc, tràn đầy nhiệt huyết!”</blockquote>
             <a class="card-link" data-photo="17" href="./Asset/17.jpg">
-              Mở phong thư Trang 17 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              Mở phong thư lưu bút <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
           </article>
         </div>
@@ -2666,12 +2675,12 @@
     };
 
     // Priority order in "Khoảnh khắc dưới mái trường":
-    // 1. Hình ảnh các em nhỏ + Bài văn viết tay (Trang 18, 19, 20)
-    // 2. Tranh vẽ sắc màu 20/11 (Trang 12, 13)
-    // 3. Lưu bút viết tay trên giấy ô ly của các em (Trang 14, 15, 16, 17)
-    // 4. Các bài thơ & truyện kể học trò (Trang 03 -> 11)
-    // 5. Bìa báo, Lời ngỏ & Lời hay ý đẹp (Trang 01, 02, 21, 22, 23)
+    // 1. Trang bìa nổi bật (Trang bìa chính thức của báo tường)
+    // 2. Hình ảnh các em nhỏ + Bài văn viết tay & Tranh vẽ 20/11
+    // 3. Lưu bút viết tay trên giấy ô ly của các em
+    // 4. Các bài thơ, truyện kể học trò & Lời ngỏ, Lời hay ý đẹp
     const photos = [
+      { id: 1, category: 'intro', title: 'Bìa báo nổi bật: Nắng ấm sân trường', description: 'Trang bìa chính thức của báo tường 20/11 Lớp 3/5 · Trường Tiểu học Chi Lăng với hình ảnh cô giáo và học sinh bên bó hoa tươi thắm.' },
       { id: 18, category: 'art', title: 'Ảnh học trò & Bài văn: Cô giáo mà em yêu quý', description: 'Bài thi viết chữ đẹp của bạn Trần Phạm Gia Huy Lớp 3/5 cùng khoảnh khắc các em nhỏ nắn nót bên trang vở.' },
       { id: 19, category: 'art', title: 'Ảnh học trò & Bài văn: Những người bạn tốt', description: 'Câu chuyện viết tay của bạn Nguyễn Hoàng Bảo Minh Lớp 3/5 và hình ảnh các bạn nhỏ chăm chú trong giờ học.' },
       { id: 20, category: 'art', title: 'Ảnh học trò & Bài văn: Người bạn tốt bụng', description: 'Bài viết chữ đẹp của bạn Nguyễn Ngọc Xuân An Lớp 3/5 cùng hình ảnh các bạn say sưa tô màu và luyện chữ.' },
@@ -2690,7 +2699,6 @@
       { id: 9, category: 'stories', title: 'Truyện kể: Ánh đèn cuối lớp', description: 'Hình ảnh cô Lan tận tụy ở lại sau giờ học để ân cần hướng dẫn học trò.' },
       { id: 10, category: 'stories', title: 'Truyện kể: Chiếc ghế dành cho bạn mới', description: 'Ngày đầu đến lớp của bạn Mai và sự chào đón ấm áp của cô cùng cả lớp.' },
       { id: 11, category: 'stories', title: 'Truyện kể: Bài học dưới gốc phượng', description: 'Một cơn giận dỗi vì quả bóng trở thành bài học quý giá về sự nhường nhịn.' },
-      { id: 1, category: 'intro', title: 'Bìa báo: Nắng ấm sân trường', description: 'Bìa báo tường 20/11 Lớp 3/5 với hình ảnh cô giáo và học sinh bên bó hoa tươi thắm.' },
       { id: 2, category: 'intro', title: 'Lời ngỏ: Chuyến đò yêu thương', description: 'Lời tri ân tháng Mười Một của tập thể Lớp 3/5 gửi đến quý thầy cô giáo.' },
       { id: 21, category: 'wishes', title: 'Lời hay ý đẹp: Về nghề giáo', description: 'Tuyển tập những câu nói nổi tiếng tôn vinh nghề dạy học cao quý.' },
       { id: 22, category: 'wishes', title: 'Lời hay ý đẹp: Tình thầy trò', description: 'Những câu ca dao, tục ngữ và vần thơ sâu sắc về nghĩa thầy trò.' },
@@ -2712,7 +2720,6 @@
     const lightboxCount = document.querySelector('#lightbox-count');
     const lightboxStrip = document.querySelector('#lightbox-strip');
     const photoPath = (id) => `./Asset/${id}.jpg`;
-    const padPage = (id) => String(id).padStart(2, '0');
     const icon = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 
     let visiblePhotos = photos;
@@ -2766,11 +2773,11 @@
         card.classList.toggle('is-featured', featured);
         card.href = photoPath(photo.id);
         card.dataset.photo = photo.id;
-        card.setAttribute('aria-label', `Trang ${padPage(photo.id)}: ${photo.title}`);
+        card.setAttribute('aria-label', photo.title);
 
         card.innerHTML = `
           <span class="card-media">
-            <span class="page-badge">Trang ${padPage(photo.id)}</span>
+            ${featured ? '<span class="featured-badge">★ Trang bìa nổi bật</span>' : ''}
             <span class="cat-badge" data-cat="${photo.category}">${categoryLabels[photo.category]}</span>
             <span class="image-slot">${icon('image')}</span>
           </span>
@@ -2781,11 +2788,11 @@
               </span>
               <span class="caption-detail"></span>
             </span>
-            <span class="caption-cta">Bấm để đọc trang báo ${icon('expand')}</span>
+            <span class="caption-cta">${featured ? 'Mở xem toàn bộ Trang bìa' : 'Bấm để đọc bài viết'} ${icon('expand')}</span>
           </span>
         `;
 
-        card.querySelector('.image-slot').append(makeImage(photo));
+        card.querySelector('.image-slot').append(makeImage(photo, { eager: featured }));
         card.querySelector('.caption-title').textContent = photo.title;
         card.querySelector('.caption-detail').textContent = photo.description;
         return card;
@@ -2793,7 +2800,7 @@
 
       gallery.replaceChildren(...cards);
       const selectedLabel = category === 'all' ? 'Tất cả chuyên mục' : categoryLabels[category];
-      galleryCount.textContent = `Đang hiển thị ${visiblePhotos.length} trang · ${selectedLabel}`;
+      galleryCount.textContent = `Đang hiển thị ${visiblePhotos.length} nội dung · ${selectedLabel}`;
     }
 
     filters.forEach((filter) => filter.addEventListener('click', () => {
@@ -2806,8 +2813,8 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'strip-pill';
-        btn.textContent = `Tr.${padPage(photo.id)}`;
-        btn.setAttribute('aria-label', `Chuyển đến Trang ${photo.id}: ${photo.title}`);
+        btn.textContent = photo.id === 1 ? 'Bìa' : String(idx + 1);
+        btn.setAttribute('aria-label', photo.title);
         btn.setAttribute('aria-current', String(idx === currentIndex));
         btn.addEventListener('click', () => showPhoto(idx));
         return btn;
@@ -2820,9 +2827,9 @@
     function showPhoto(index) {
       currentIndex = (index + lightboxPhotos.length) % lightboxPhotos.length;
       const photo = lightboxPhotos[currentIndex];
-      lightboxTitle.textContent = `Trang ${padPage(photo.id)}: ${photo.title}`;
+      lightboxTitle.textContent = photo.title;
       lightboxDescription.textContent = photo.description;
-      lightboxCount.textContent = `Trang ${padPage(photo.id)} (${currentIndex + 1}/${lightboxPhotos.length})`;
+      lightboxCount.textContent = `${currentIndex + 1} / ${lightboxPhotos.length}`;
       originalLink.href = photoPath(photo.id);
       previousButton.disabled = nextButton.disabled = lightboxPhotos.length < 2;
       message.hidden = false;
@@ -2947,7 +2954,7 @@
       },
       {
         id: 4,
-        question: 'Trong truyện ngắn “Bông hoa điểm 10” (Trang 04), ai đã dịu dàng động viên bạn Nam kiên trì luyện Toán?',
+        question: 'Trong truyện ngắn “Bông hoa điểm 10”, ai đã dịu dàng động viên bạn Nam kiên trì luyện Toán?',
         options: ['Bạn lớp trưởng', 'Cô giáo', 'Bác bảo vệ', 'Chú chim nhỏ'],
         correct: 1,
         explanation: 'Tuyệt vời! Cô giáo đã dịu dàng nhắn nhủ bạn Nam: “Chưa làm đúng hôm nay không có nghĩa là ngày mai con không làm được.”',
@@ -3059,12 +3066,12 @@
 
     // --- GAME 2: LẬT THẺ TRÍ NHỚ (MEMORY CARD GAME) ---
     const memoryItems = [
-      { pageId: 1, label: 'Trang 01 · Bìa báo' },
-      { pageId: 3, label: 'Trang 03 · Thơ Bụi phấn' },
-      { pageId: 12, label: 'Trang 12 · Tranh 20/11' },
-      { pageId: 14, label: 'Trang 14 · Lưu bút' },
-      { pageId: 18, label: 'Trang 18 · Chữ đẹp' },
-      { pageId: 21, label: 'Trang 21 · Lời hay' },
+      { pageId: 1, label: 'Bìa báo 20/11' },
+      { pageId: 3, label: 'Thơ Bụi phấn' },
+      { pageId: 12, label: 'Tranh vẽ 20/11' },
+      { pageId: 14, label: 'Lưu bút ô ly' },
+      { pageId: 18, label: 'Vở sạch chữ đẹp' },
+      { pageId: 21, label: 'Lời hay ý đẹp' },
     ];
 
     const memoryGrid = document.querySelector('#memory-grid');
